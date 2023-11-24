@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmms>
+    <product_group id="406" level="1" sort="3">
+        <name lang="en">Equipment</name>
+        <last_modified>2021-07-01T11:28:53-05:00</last_modified>
+        <listofgroups>
+            <product_group id="460" level="2" sort="4015000000">
+                <name lang="en">Forest Machines</name>
+                <last_modified>2021-07-01T11:30:46-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="657" level="3" sort="4015003000">
+                        <name lang="en">Forest Machines</name>
+                        <last_modified>2021-12-03T03:15:58-06:00</last_modified>
+                        <listofproducts>
+                            <product id="18111506" sort="500">
+                                <nondisplayname lang="en">568 - 2011, Tier 4 Interim, NACD</nondisplayname>
+                                <last_modified>2021-10-27T09:16:02-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="470" level="2" sort="4027000000">
+                <name lang="en">Off-Highway Trucks</name>
+                <last_modified>2021-07-01T11:30:14-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="715" level="3" sort="4027001000">
+                        <name lang="en">Mining Trucks</name>
+                        <last_modified>2021-12-03T03:15:43-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000033348" sort="4027001010">
+                                <nondisplayname lang="en">785G - 2017, Tier 4 Final, NACD</nondisplayname>
+                                <last_modified>2021-10-27T09:12:16-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000031723" sort="4027001030">
+                                <nondisplayname lang="en">793F - 2017, Tier 4 Final, NACD</nondisplayname>
+                                <last_modified>2021-08-25T17:16:57-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="472" level="2" sort="4030000000">
+                <name lang="en">Pipelayers</name>
+                <last_modified>2021-07-01T11:30:25-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="311" level="3" sort="4030001001">
+                        <name lang="en">Pipelayers</name>
+                        <last_modified>2021-12-03T03:15:47-06:00</last_modified>
+                        <listofproducts>
+                            <product id="752487" sort="4029001008">
+                                <nondisplayname lang="en">561N - 2007, Tier 2, Global</nondisplayname>
+                                <last_modified>2021-06-28T23:53:26-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="474" level="2" sort="4031000000">
+                <name lang="en">Road Reclaimers</name>
+                <last_modified>2021-07-01T11:30:53-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="312" level="3" sort="4031001000">
+                        <name lang="en">Road Reclaimer</name>
+                        <last_modified>2021-12-03T03:16:01-06:00</last_modified>
+                        <listofproducts>
+                            <product id="18244506" sort="4030001001">
+                                <nondisplayname lang="en">RM300 - 2011</nondisplayname>
+                                <last_modified>2021-10-27T09:17:14-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="483" level="2" sort="4046000000">
+                <name lang="en">Wheel Loaders</name>
+                <last_modified>2021-07-01T11:31:25-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="324" level="3" sort="4046005000">
+                        <name lang="en">Large Wheel Loaders</name>
+                        <last_modified>2021-12-03T03:16:12-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000033063" sort="2400">
+                                <nondisplayname lang="en">988K XE - 2017, AmN, EU, AUS</nondisplayname>
+                                <last_modified>2021-11-17T16:40:17-06:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+        </listofgroups>
+    </product_group>
+    <context>
+        <sales_channel id="H430"/>
+        <date_generated>2021-12-07T08:26:50-06:00</date_generated>
+    </context>
+</cmms>

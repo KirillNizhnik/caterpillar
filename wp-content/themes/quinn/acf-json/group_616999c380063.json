@@ -1,0 +1,50 @@
+{
+    "key": "group_616999c380063",
+    "title": "CAT - No Results",
+    "fields": [
+        {
+            "key": "field_616999c72f620",
+            "label": "No Results Custom Link",
+            "name": "no_results_custom_link",
+            "type": "text",
+            "instructions": "Shows this text when there are no results, replaces \"Sorry, there aren't currently any listings for this family.\" default.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "cat_new_machine_family"
+            }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "family"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1635794081
+}

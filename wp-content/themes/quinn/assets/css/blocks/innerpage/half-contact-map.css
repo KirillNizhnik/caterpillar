@@ -1,0 +1,210 @@
+.half-contact-map {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.half-contact__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.half-contact__background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    opacity: .40;
+}
+
+.half-contact-map .flex-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.half-contact__wrapper {
+    z-index: 1;
+    position: relative;
+}
+
+.half-contact-map iframe {
+    width: 100%;
+    height: 450px;
+}
+
+.half-contact-map .half-contact__address span {
+    display: block;
+}
+
+.half-map {
+    padding: 0;
+    background:#fbfbfb;
+}
+
+.half-map__wrapper {
+    height: 100%;
+}
+
+.half-contact__directions-icon {
+    padding: 8px 8px 6px;
+    margin-right: 8px;
+    background-color: #FFCC00;
+    color: #262A2C;
+}
+
+.half-contact__phone span {
+    font-size: 22px;
+}
+
+.half-contact__maillist {
+    position: relative;
+    padding-left: 28px;
+}
+
+.half-contact__maillist:before {
+    content: '';
+    display: block;
+    background-image: url( https://www.quinncompany.com/wp-content/uploads/2023/03/envelope.png );
+    height: 20px;
+    width: 20px;
+    margin-right: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+i.icon.icon-hours {
+    background-image: url( https://www.quinncompany.com/wp-content/uploads/2022/10/time.png );
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-bottom: -4px;
+    margin-right: 8px;
+}
+
+i.icon.icon-phone {
+    background-image: url( https://www.quinncompany.com/wp-content/uploads/2022/10/call.png );
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-bottom: -4px;
+    margin-right: 8px;
+}
+
+i.icon.icon-printer {
+    background-image: url( https://www.quinncompany.com/wp-content/uploads/2022/10/fax.png );
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-bottom: -4px;
+    margin-right: 8px;
+}
+
+i.icon.icon-envelope {
+    background-image: url( https://www.quinncompany.com/wp-content/uploads/2023/03/envelope.png );
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-bottom: -4px;
+    margin-right: 8px;
+}
+
+i.icon.icon-location-on {
+    margin-right: 7px;
+    color: #ffcc00;
+    font-size: 20px;
+}
+
+i.icon.icon-printer + a,
+i.icon.icon-envelope + a {
+    font-weight: 400;
+    color: #444444;
+}
+
+i.icon.icon-printer + a:hover,
+i.icon.icon-envelope + a:hover {
+    color: #fec81d;
+}
+
+.half-contact-map .half-contact__email-address a,
+.half-contact-map .half-contact__phone a {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .025em;
+    line-height: 1.666em;
+    padding: 0 0 0;
+    color: #444444;
+}
+
+.half-contact-map .half-contact__email-address a:hover,
+.half-contact-map .half-contact__phone a:hover {
+    color: #fec81d;
+}
+
+.half-contact-map .half-contact__email-title,
+.half-contact-map .half-contact__email-address {
+    width: 100%;
+}
+
+.half-contact-map .half-contact__email-address {
+    padding-bottom: 12px;
+    margin-left: 0;
+}
+
+.half-contact-map p {
+    line-height: 1.666em;
+}
+
+@media ( min-width: 768px ) {
+
+    .half-contact-map .half-contact__email-title,
+    .half-contact-map .half-contact__email-address {
+        float: left;
+        width: 50%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .half-contact-map .half-contact__maillist,
+    .half-contact-map .half-contact__email-title,
+    .half-contact-map .half-contact__email-address {
+        margin: 0;
+    }
+
+    .half-contact-map .half-contact__maillist {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 24px;
+
+    }
+}
+
+@media ( min-width: 1025px ) {
+
+    .half-contact-map iframe {
+        height: 100%;
+    }
+
+    .half-contact-map p {
+        font-size: 16px;
+    }
+}
+
+@media ( min-width: 1200px ) {
+    .half-contact__wrapper {
+        max-width: 670px;
+        margin-left: auto;
+    }
+
+    .half-map__wrapper {
+        max-width: 670px;
+        margin-right: auto;
+    }
+}

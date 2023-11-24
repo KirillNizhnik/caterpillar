@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmms>
+    <product_group id="402" level="1" sort="4">
+        <name lang="en">Power Systems</name>
+        <last_modified>2021-07-01T11:39:55-05:00</last_modified>
+        <listofgroups>
+            <product_group id="18255914" level="2" sort="1002000000">
+                <name lang="en">Industrial</name>
+                <last_modified>2021-07-01T11:40:53-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="18255931" level="3" sort="1002003000">
+                        <name lang="en">Industrial Diesel Power Units</name>
+                        <last_modified>2021-12-03T03:20:44-06:00</last_modified>
+                        <listofproducts>
+                            <product id="18395426" sort="1002003001">
+                                <nondisplayname lang="en">C1.1 Tier 4 Industrial Power Unit</nondisplayname>
+                                <last_modified>2021-11-16T15:38:30-06:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="18395494" sort="1002003002">
+                                <nondisplayname lang="en">C1.5 Tier 4 Industrial Power Unit</nondisplayname>
+                                <last_modified>2021-11-16T15:38:33-06:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="18395551" sort="1002003003">
+                                <nondisplayname lang="en">C2.2 Tier 4 Industrial Power Unit</nondisplayname>
+                                <last_modified>2021-11-16T15:38:25-06:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="18255916" level="2" sort="1003000000">
+                <name lang="en">Marine Power Systems</name>
+                <last_modified>2021-07-01T11:41:03-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="18260926" level="3" sort="1003001000">
+                        <name lang="en">Commercial Propulsion Engines</name>
+                        <last_modified>2021-12-03T03:20:57-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000031743" sort="1003001038">
+                                <nondisplayname lang="en">C32 Tier 3 / IMO II</nondisplayname>
+                                <last_modified>2021-09-17T16:59:56-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                    <product_group id="18260928" level="3" sort="1003003000">
+                        <name lang="en">Marine Generator Sets</name>
+                        <last_modified>2021-12-03T03:20:58-06:00</last_modified>
+                        <listofproducts>
+                            <product id="18494399" sort="1003003010">
+                                <nondisplayname lang="en">C18 ACERT Tier 3</nondisplayname>
+                                <last_modified>2021-09-17T17:19:28-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="18255918" level="2" sort="1004000000">
+                <name lang="en">Oil and Gas</name>
+                <last_modified>2021-07-01T11:39:58-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="18378906" level="3" sort="200">
+                        <name lang="en">Fire Pump Engines</name>
+                        <last_modified>2021-12-03T03:20:13-06:00</last_modified>
+                        <listofproducts>
+                            <product id="18457505" sort="1004002006">
+                                <nondisplayname lang="en">C18 ACERT Fire Pump Engine</nondisplayname>
+                                <last_modified>2021-10-22T16:19:28-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+        </listofgroups>
+    </product_group>
+    <context>
+        <sales_channel id="H430"/>
+        <date_generated>2021-12-07T08:27:55-06:00</date_generated>
+    </context>
+</cmms>

@@ -1,0 +1,92 @@
+{
+    "global": {
+        "name": {
+            "label": "Site Name",
+            "value": "Client Name"
+        },
+        "bordercolor": {
+            "label": "Border Color",
+            "value": "#334f81"
+        },
+        "backgroundcolor": {
+            "label": "Background Color",
+            "value": "#4c74b9"
+        },
+        "textcolor": {
+            "label": "Text Color",
+            "value": "#555"
+        }
+    },
+    "logo": {
+        "width": {
+            "label": "Logo Width (px)",
+            "value": "120"
+        },
+        "src": {
+            "label": "Logo Image (URL)",
+            "value": "https://paperbackdesign.com/wp-content/uploads/2015/04/generic-logo_150ppi-600x300px.png"
+        },
+        "url": {
+            "label": "Logo Link",
+            "value": "https://www.example.com"
+        }
+    },
+    "admin_view" : "true",
+    "admin_message": {
+        "title": {
+            "label": "Admin Message Title",
+            "value": "Contact Us Form Submission"
+        },
+        "salutation": {
+            "label": "Admin Message Salutation",
+            "value": "Hi there,"
+        },
+        "content": {
+            "label": "Admin Message Content",
+            "value": "Someone submitted a form with the following information:"
+        }
+    },
+    "customer_view" : "",
+    "customer_message": {
+        "title": {
+            "label": "Customer Message Title",
+            "value": "Thanks for Contacting Us!"
+        },
+        "salutation": {
+            "label": "Customer Message Salutation",
+            "value": "Hi there,"
+        },
+        "content": {
+            "label": "Customer Message Content",
+            "value": "We received your form submission with the following information:"
+        }
+    },
+    "fields": [
+        {
+            "label": "First Name",
+            "value": "[firstname]"
+        },
+        {
+            "label": "Last Name",
+            "value": "[lastname]"
+        },
+        {
+            "label": "Email",
+            "value": "[email]"
+        },
+        {
+            "label": "Message",
+            "value": "[message]"
+        }
+    ],
+    "footer": {
+        "textcolor": {
+            "label": "Text Color",
+            "value": "#fff"
+        },
+        "content": {
+            "label": "Footer Content",
+            "value": "This email was sent from the Contact Us form at https://www.example.com/contact-us/."
+        }
+    }
+}

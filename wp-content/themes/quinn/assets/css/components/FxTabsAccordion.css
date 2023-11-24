@@ -1,0 +1,102 @@
+/*------------------------------------*\
+    
+    FX Tabs/Accordion - Global styling for all tabs/accordions
+
+    Add custom tabs/accordion styling to this file if it should be applied to all tabs/accordions on the site
+    Otherwise, put your styles in individual block stylesheets
+
+\*------------------------------------*/
+
+.tab-accordion__panel:not(.is-active) .tab-accordion__panel__content {
+    display: none;
+}
+
+.tab-accordion__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    top: 1px;
+    position: relative;
+    z-index: 2;
+}
+
+.tab-accordion__tab,
+.tab-accordion__panel__toggle {
+    list-style-type: none !important;
+    margin: 5px 0 0;
+    padding: 0;
+    display: block;
+    color: inherit;
+    line-height: normal;
+    background: #f5f5f5;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    text-align: left;
+}
+
+.tab-accordion__tab.is-active,
+.tab-accordion__panel__toggle.is-active {
+    border-bottom: 1px solid #fff;
+}
+
+.tab-accordion__panel__toggle.is-active {
+    border-radius: 4px 4px 0 0;
+}
+
+.tab-accordion__tab.is-active,
+.tab-accordion__tab:hover,
+.tab-accordion__tab:focus,
+.tab-accordion__panel__toggle.is-active,
+.tab-accordion__panel__toggle:hover,
+.tab-accordion__panel__toggle:focus {
+    color: inherit;
+    background: #fff;
+    text-decoration: none;
+}
+
+.tab-accordion__tab:focus:not(:focus-visible),
+.tab-accordion__panel__toggle:focus:not(:focus-visible) {
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+}
+
+.tab-accordion__panel__content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.tab-accordion {
+    position: relative;
+}
+
+.tab-accordion__panel__content .blog-listing__pagination [class*="col-"] {
+    padding-left: 0;
+}
+
+@media (min-width: 1025px) {
+    .tab-accordion__panel__content {
+        position: relative;
+        width: 100%;
+        border-radius: 4px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border: 1px solid #ddd;
+        padding: 30px;
+    }
+
+    .tab-accordion__tab,
+    .tab-accordion__panel__toggle {
+        border-radius: 4px 4px 0 0;
+        margin: 0;
+        width: auto;
+        padding: 10px 30px;
+    }
+
+    .tab-accordion__tab {
+        margin-right: 8px;
+    }
+}

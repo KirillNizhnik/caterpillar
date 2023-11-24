@@ -1,0 +1,164 @@
+var CSE = (function(CSE, $) {
+
+    CSE.form     = '';
+    CSE.loaded   = false;
+    CSE.jqXHR    = false;
+    CSE.current  = [];
+    CSE.previous = [];
+
+    CSE.fetch = function() {
+
+        $('html').addClass('loading');
+        // $('#search-inject').append('<div class="loading-icon">Searching</div>');
+
+        if (CSE.jqXHR && CSE.jqXHR.readyState !== 4) {
+            CSE.jqXHR.abort();
+        }
+
+        CSE.previous = CSE.current;
+        CSE.current  = CSE.form.serializeArray();
+
+        var postData = {
+            'action': 'equipment_search_refresh',
+            'data': {
+                'current': JSON.stringify(CSE.current),
+                'previous': JSON.stringify(CSE.previous),
+            }
+        };
+
+
+        var sort = {},
+            value = $('#product-filter__dropdown').val(),
+            value = value.split(' - ');
+
+        sort.field = value[0];
+        sort.order = value[1];
+
+        postData.sort = sort;
+
+
+        CSE.jqXHR = $.post(wp.ajaxurl, postData, CSE.render);
+    }
+
+
+    CSE.parse_fields = function(json) {
+
+        if (CSE.jqXHR && CSE.jqXHR.readyState !== 4) {
+            CSE.jqXHR.abort();
+        }
+
+        CSE.previous = CSE.current;
+        CSE.current  = CSE.form.serializeArray();
+
+        CSE.jqXHR   = $.post(wp.ajaxurl, {
+            'action': 'equipment_search_fields',
+            'changed': CSE.changed,
+            'data': {
+                'current': JSON.stringify(CSE.current),
+                'previous': JSON.stringify(CSE.previous),
+            }
+        })
+        .done(CSE.update_field_options);
+    }
+
+
+    CSE.update_field_options = function(json) {
+
+        $.each(json.values, function(name, values) {
+            CSE.form.find('[name="'+name+'"]').html(values);
+        });
+
+       // $('.selectric-enabled, ').selectric('refresh');
+    }
+
+    CSE.inject = function() {
+
+        if( ! $('#search-inject').length )
+            return;
+
+        CSE.form = $('.page-sidebar .js-search-form');
+        CSE.changed = $(this).attr('name');
+
+        CSE.fieldStates();
+        CSE.parse_fields();
+        // CSE.fetch();
+    }
+
+
+    CSE.render = function(json) {
+
+        var $body = $('#search-inject');
+
+        $(window).trigger('CSE::beforeRender');
+
+        CATSearch.Templates.collection = json.data;
+        console.log( json.data );
+        CATSearch.Templates.setView($('.js-view.active').data('view'));
+
+        //$body.html(json.template);
+        $(window).trigger('CSE::afterRender');
+
+        $('html').removeClass('loading');
+
+        $('html,body').animate({
+            scrollTop: $body.offset().top - 100
+            },
+            1000
+        );
+    }
+
+
+    CSE.fieldStates = function() {
+
+        var fields = CSE.form.find('[data-enabled-field]');
+
+        fields.each(function(){
+            var f = $(this),
+                src = CSE.form.find('[name="'+f.data('enabled-field')+'"]').val(),
+                val = f.data('enabled-value');
+
+            if( src == val ) {
+                f.removeAttr('disabled');
+                f.trigger('enable'); // fancy select
+            } else {
+                f.attr('disabled', 'disabled')
+                f.trigger('disable'); // fancy select
+            }
+        });
+    }
+
+
+
+    // events
+    $(function(){
+
+        // sets the search to the correct form
+        $('.js-search-form').on('change', 'select, input', function(event) {
+           // console.log(this);
+            CSE.form = $(this).closest('.js-search-form');
+            CSE.changed = $(this).attr('name');
+
+            //CSE.fieldStates();
+            CSE.parse_fields();
+        });
+
+
+        $('.js-search-form').on('submit', function(event) {
+            if(window.location.pathname === '/equipment/search'){
+                event.preventDefault();
+                CSE.form = $(this).closest('.js-search-form');
+                CSE.fetch();
+            }
+        });
+
+        $('body').on('change', '#product-filter__dropdown', function() {
+            //console.log(this);
+            $('.js-search-form').submit();
+        });
+
+        // CSE.inject();
+    });
+
+    return CSE;
+
+})(CSE || {}, jQuery)

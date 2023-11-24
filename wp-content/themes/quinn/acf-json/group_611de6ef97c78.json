@@ -1,0 +1,49 @@
+{
+    "key": "group_611de6ef97c78",
+    "title": "Deals and Specials ( Homepage Image and the Featured Image on the Main Deals Page  )",
+    "fields": [
+        {
+            "key": "field_611de78ccdf44",
+            "label": "Image",
+            "name": "deals_and_specials_image",
+            "type": "image",
+            "instructions": "This image should be 768px by 384px.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "deals-specials"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1637161611
+}

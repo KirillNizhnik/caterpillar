@@ -1,0 +1,44 @@
+{
+    "key": "group_619cef212acbe",
+    "title": "Locations - alternate specs",
+    "fields": [
+        {
+            "key": "field_619cef6ce8982",
+            "label": "Alternate Get Directions Link",
+            "name": "alternate_get_directions",
+            "type": "text",
+            "instructions": "If you'd like to change the link on the get directions button for this location, add the link here. Will not change from original if left empty.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "location"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1637675040
+}

@@ -1,0 +1,76 @@
+.fullwidth-image-background {
+	position: relative;
+}
+
+.fullwidth-image {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.fullwidth-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+	font-family: 'object-fit: cover;';
+	background-position: top;
+}
+
+.fullwidth-overlay {
+	position: relative;
+	padding: 48px 0;
+	background: linear-gradient(0deg, rgba(38, 42, 44, 0.627) 0%, rgba(38, 42, 44, 0) 119.5%);
+}
+
+.fullwidth-overlay-content {
+	text-align: center;
+	color: #ffffff;
+}
+
+.fullwidth-overlay-content h2,
+.fullwidth-overlay-content h3,
+.fullwidth-overlay-content h4,
+.fullwidth-overlay-content h5 {
+	text-shadow: 0 3px 6px rgb(0,0,0,16%);
+	color: #fff;
+}
+
+@media (min-width: 768px) {
+	.fullwidth-overlay {
+		background: transparent;
+		padding: 32px 0 60px;
+	}
+
+	.fullwidth-overlay-content {
+		width: 100%;
+		max-width: 662px;
+		margin: 0 auto;
+		background: linear-gradient(180deg, rgba(38, 42, 44, 0) 0%, rgba(38, 42, 44, 0.118) 18.7%, rgb(38 42 44 / 60%) 48.8%, rgb(38 42 44 / 60%) 100%);
+		padding: 86px 30px 46px;
+	}
+
+	.fullwidth-overlay-content h2 {
+		text-shadow: unset;
+	}
+}
+
+@media (min-width: 1025px) {
+	.fullwidth-overlay-content {
+		max-width: 1364px;
+		padding: 60px 20px 48px;
+		background: linear-gradient(180deg, rgba(38, 42, 44, 0) 0%, rgba(38, 42, 44, 0.118) 18.7%, rgb(38 42 44 / 50%) 48.8%, rgb(38 42 44 / 50%) 100%);
+	}
+
+	.fullwidth-overlay {
+		padding: 120px 0;
+	}
+
+	.fullwidth-overlay-content-wrapper {
+		max-width: 958px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}

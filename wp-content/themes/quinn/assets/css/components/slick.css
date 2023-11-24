@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    
+    WebFX Slick Customizations - Global styling for all slider/carousels
+
+    Add custom slider styling to this file if it should be applied to all slick sliders on the site
+    Otherwise, put your slider-specific styles in individual block stylesheets
+
+\*------------------------------------*/
+
+
+/* Preloader affect for your slider */
+
+.js-slider-has-preloader {
+    /* Add class to slider to show  */
+    min-height: 50px;
+    position: relative;
+}
+
+.js-slider-has-preloader:before {
+    content: url('../img/loading.gif');
+    /* Create and upload a loading gif to your image directory */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    /* Update width based on gif size */
+    height: 50px;
+    /* Update height based on gif size */
+    transition: all .5s ease;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.js-slider-has-preloader-init:before {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+
+
+/* Only show the 1st slide while your slider is loading
+NOTE: .your-slider should be the class that is holding your entire slider.
+NOTE: .slide is the class you have on each slide before any js classes are added.
+Guru: https://app.getguru.com/card/ixR67EpT/Slick-Slider
+*/
+
+.your-slider .slide { /* TODO: Change .your-slider to match your sliders wrapper class and .slide to match your individual slide class. Example: https://webpagefx.mangoapps.com/msc/NTUzMjUxXzg0NDA4Njg  */
+    display: none;
+}
+
+.your-slider .slide:first-child {  /* TODO: Change .your-slider to match your sliders wrapper class and .slide to match your individual slide class. Example: https://webpagefx.mangoapps.com/msc/NTUzMjUxXzg0NDA4Njg  */
+    display: block;
+}
+
+.your-slider.slick-initialized .slide {  /* TODO: Change .your-slider to match your sliders wrapper class and .slide to match your individual slide class. Example: https://webpagefx.mangoapps.com/msc/NTUzMjUxXzg0NDA4Njg  */
+    display: block;
+}

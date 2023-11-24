@@ -1,0 +1,305 @@
+.home-about {
+	position: relative;
+	margin-top: -40px;
+	z-index: 9;
+}
+
+.home-about-texture {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 40px);
+	        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 40px);
+}
+
+.home-about-texture img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+	font-family: 'object-fit: cover;';
+}
+
+.home-about-overlay {
+	position: relative;
+	padding: 0 0 50px;
+}
+
+.home-about-quipment {
+	background: #ffffff;
+	box-shadow: 0 6px 18px rgb(74,79,82,10%);
+	margin: -66px auto 50px;
+}
+
+.home-about-quipment-list {
+	width: 100%;
+	height: 100%;
+}
+
+.nopad {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.home-about-quipment-list:nth-child(1) .icon-sec:before {
+	font-family: 'icomoon';
+	content: "\e926";
+}
+
+.home-about-quipment-list:nth-child(2) .icon-sec:before {
+	font-family: 'icomoon';
+	content: "\e925";
+}
+
+.home-about-quipment-list:nth-child(3) .icon-sec:before {
+	font-family: 'icomoon';
+	content: "\e924";
+}
+
+.home-about-quipment-list:nth-child(4) .icon-sec:before {
+	font-family: 'icomoon';
+	content: "\e928";
+}
+
+.home-about-quipment-list:nth-child(5) .icon-sec:before {
+	font-family: 'icomoon';
+	content: "\e927";
+}
+
+
+.home-about-quipment-list a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	border-bottom: 1px solid #F5F5F5;
+	padding: 15px 34px 15px 34px;
+	transition: all .4s ease-in-out;
+}
+
+.home-about-quipment-list:last-child a {
+	border-bottom: none;
+}
+
+.home-about-quipment-list a:hover {
+	background: #262A2C;
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
+	z-index: 99;
+	position: relative;
+	box-shadow: 0 3px 14px rgb(0 0 0 / 16%);
+}
+
+.home-about-quipment-icon {
+	color: #FFCC00;
+	font-size: 38px;
+	width: 44px;
+}
+
+.home-about-quipment-title {
+	display: flex;
+}
+
+.title-quipment h4 {
+	margin: 0 0 0;
+	color: #262A2C;
+	line-height: 1.222em;
+	letter-spacing: 0.45px;
+	font-size: 18px;
+	transition: color .4s ease-in-out;
+	word-break: keep-all;
+}
+
+.home-about-quipment-list a .btn {
+	display: none;
+}
+
+.title-quipment {
+	padding-left: 28px;
+}
+
+.home-about-quipment-list a:hover .title-quipment h4 {
+	color: #ffffff;
+}
+
+.home-about-contact-area {
+	background: #5D696F;
+	color: #ffffff;
+}
+
+.home-about-contact-area p {
+    margin: 0 0 0;
+    text-align: center;
+    padding: 30px 18px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.home-about-contact-area p span {
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.home-about-contact-area .btn {
+	width: 100%;
+}
+
+
+
+@media (min-width: 768px) {
+
+	.home-about {
+		margin-top: -56px;
+	}
+
+	.home-about-quipment {
+		margin: -86px auto 60px;
+	}
+
+	.home-about-texture {
+		-webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 56px);
+		        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 56px);
+	}
+
+	.home-about-quipment-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.home-about-quipment-list {
+		width: 20%;
+	}
+
+	.home-about-quipment-list a {
+		border-bottom: none;
+		padding: 26px 6px 28px 6px;
+		border-right: 1px solid #F5F5F5;
+	}
+
+	.home-about-quipment-list:last-child a {
+		border-right: none;
+	}
+
+	.title-quipment {
+		padding-left: 0;
+		width: 100%;
+	}
+
+	.title-quipment h4 {
+		font-size: 20px;
+	}
+
+	.home-about-quipment-title {
+		display: table;
+		margin: 0 auto;
+	}
+
+	.home-about-quipment-list a:hover {
+		border-color: transparent;
+	}
+
+	.home-about-contact-area p {
+		padding: 0 70px 0 0;
+		font-size: 16px;
+		text-align: left;
+		width: calc(100% - 168px);
+	}
+
+	.home-about-contact-area .btn {
+		width: 168px;
+		padding: 13px 20px;
+	}
+
+	.home-about-contact-area-wrapper {
+		display: flex;
+	}
+
+	.home-about-contact-area {
+		padding: 15px 30px;
+	}
+
+	.home-about-contact-area .btn::after {
+		display: none;
+	}
+}
+
+@media (min-width: 1025px) {
+
+	.home-about-quipment {
+	    margin: -20px auto 80px;
+	}
+
+	.home-about-quipment-list a {
+		border-right: none;
+		text-align: center;
+		padding: 60px 15px 24px 15px;
+	}
+
+	.home-about-quipment-title {
+		display: flex;
+		justify-content: center;
+		margin: 0 0 22px;
+	}
+
+	.home-about-quipment-icon {
+	    font-size: 48px;
+	    width: 48px;
+	}
+
+	.title-quipment {
+	    padding-left: 16px;
+	    width: auto;
+	}
+
+	.title-quipment h4 {
+		font-size: 26px;
+		text-align: left;
+	}
+
+	.home-about-quipment-list a .btn {
+	    display: inline-block;
+	    color: #ffffff;
+	    opacity: 0;
+	    transition: opacity .4s ease-in-out;
+	}
+
+	.home-about-quipment-list a:hover .btn {
+		opacity: 1;
+		color: #ffffff;
+		font-weight: 400;
+	}
+
+	.home-about-contact-area {
+		padding: 0 0 0 14px;
+	}
+
+	.home-about-contact-area-wrapper {
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.home-about-contact-area p {
+		width: auto;
+		font-size: 18px;
+	}
+
+	.home-about-contact-area .btn {
+	    width: 162px;
+	    padding: 11px 20px;
+	}
+
+	.home-about-overlay {
+		padding: 0 0 80px;
+	}
+
+	.home-about-texture {
+	    -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 136px);
+	            clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 136px);
+	}
+
+	.home-about {
+	    margin-top: -136px;
+	}
+}

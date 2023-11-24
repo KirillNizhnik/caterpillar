@@ -1,0 +1,80 @@
+/*------------------------------------*\
+
+    WebFX Choices.js Customizations - Global styling for select box/text inputs using Choices.js
+
+    Add custom Choices.js select input styling to this file if it should be applied to all Choices.js select inputs on the site
+    Otherwise, put your styles in individual block stylesheets
+
+\*------------------------------------*/
+.choices__list--dropdown{
+	word-break: break-word !important;
+}
+.choices {
+	box-shadow: 0 1px 10px rgb(61 67 70 / 8%);
+}
+
+.choices__inner {
+	border: 1px solid #E5E5E5;
+    background-color: #F5F5F5;
+    padding: 10px 44px 10px 14px!important;
+    color: #3D4346;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    font-size: 16px;
+    height: 48px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.is-focused .choices__inner, .is-open .choices__inner {
+    border-color: #FFCC00;
+}
+
+.choices[data-type*='select-one'] .choices__input {
+	display: none;
+}
+
+.choices[data-type*='select-one']:after {
+	content: "\e905";
+	font-family: 'icomoon';
+	right: 20px;
+	top: 0;
+	margin: 0!important;
+	border: none;
+	width: auto;
+	height: auto;
+	color: #FFCC00;
+	font-size: 16px;
+	line-height: 48px;
+}
+
+
+@media(min-width: 768px) {
+
+
+	.choices__inner {
+		height: 56px;
+		padding: 15px 44px 15px 14px!important;
+	}
+
+	.choices[data-type*='select-one']:after {
+		line-height: 56px;
+	}
+
+
+
+}
+
+@media(min-width: 1025px) {
+
+
+	.choices__inner {
+	    height: 60px;
+	    padding: 16px 44px 16px 18px!important;
+	}
+
+	.choices[data-type*='select-one']:after {
+	    line-height: 60px;
+	}
+
+
+}

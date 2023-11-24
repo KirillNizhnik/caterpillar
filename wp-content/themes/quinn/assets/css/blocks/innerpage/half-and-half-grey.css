@@ -1,0 +1,157 @@
+.half-and-half {
+	position: relative;
+	background: #F5F5F5;
+}
+
+.half-image {
+	width: 100%;
+	height: 240px;
+}
+
+.half-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+	font-family: 'object-fit: cover;';
+}
+
+.half-text {
+	padding: 46px 22px 50px;
+}
+
+.half-text h2 {
+	color: #262A2C;
+	font-weight: 400;
+	font-size: 22px;
+}
+
+.half-text p {
+	color: #484C4E;
+}
+
+@media (min-width: 768px) {
+	.half-image {
+		height: 385px;
+	}
+
+	.half-text h2 {
+		font-size: 30px;
+	}
+
+	.half-text {
+		padding: 58px 82px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.half-image {
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+	}
+
+	.half-image.left {
+		left: 0;
+	}
+
+	.half-image.right {
+		right: 0;
+	}
+
+	.half-text {
+		width: 50%;
+		padding-top: 76px;
+		padding-bottom: 76px;
+	}
+
+	.half-text-wrapper {
+		width: 100%;
+		max-width: 580px;
+	}
+
+	.half-text.right {
+		float: right;
+		padding-right: 14px;
+		padding-left: 102px;
+	}
+
+	.half-text.right .half-text-wrapper {
+		margin: 0 auto 0 0;
+	}
+
+	.half-text.left {
+		float: left;
+		padding-left: 14px;
+		padding-right: 102px;
+	}
+
+	.half-text.left .half-text-wrapper {
+		margin: 0 0 0 auto;
+	}
+
+	.half-text h2 {
+		font-size: 36px;
+	}
+
+	/*RIGHT IMAGE*/
+
+	.half-and-half.right-image .half-image.right-img {
+		right: 0 !important;
+		left: none;
+	}
+
+	.half-and-half.right-image .half-text.left {
+		float: left;
+		padding-left: 50px;
+		padding-right: 102px;
+	}
+
+}
+
+.grey-half-and-half {
+	margin-top: var(--section-margins);
+	margin-bottom: var(--section-margins);
+}
+
+.grey-half-and-half .row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.dark-grey-left .inner-block-wrap {
+	background: #414143;
+	padding: 50px;
+	border-radius: 15px;
+	margin: 20px;
+	height: calc(100% - 40px);
+}
+
+.dark-grey-left h2,
+.dark-grey-left strong {
+	color: #ffc60b;
+	font-family: 'Roboto Condensed',
+		sans-serif;
+}
+
+.dark-grey-left p {
+	color: #fff;
+}
+
+.light-grey-right .inner-block-wrap {
+	background: #eef0ef;
+	padding: 50px;
+	border-radius: 15px;
+	margin: 20px;
+	height: calc(100% - 40px);
+}
+
+.light-grey-right h2 {
+	color: #88969f;
+}
+
+.light-grey-right strong {
+	font-family: 'Roboto Condensed',
+		sans-serif;
+}

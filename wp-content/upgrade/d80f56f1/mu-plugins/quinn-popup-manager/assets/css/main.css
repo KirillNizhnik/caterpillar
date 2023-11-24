@@ -1,0 +1,78 @@
+.mfp-bg {
+	z-index: 100000;	
+}
+
+.mfp-wrap {
+	z-index: 150000;	
+}
+
+#quinn-popup-modal {
+	background: white;
+	padding: 20px;
+}
+
+#quinn-popup-modal .popup-image{
+	overflow-x: auto;
+    background-size: cover;
+    background-position-y: -100px;
+    height: 250px;
+	background-repeat: no-repeat;
+}
+
+#quinn-popup-modal.no-title .popup-image{
+    height: 497px;
+}
+
+#quinn-popup-modal h1{	
+	margin-top: -40px;
+    margin-left: 10px;
+    padding: 15px;
+    background-color: white;
+    width: fit-content;
+    display: block;
+    border-bottom: 2px solid #cfcfcf;	
+}
+
+#quinn-popup-modal .content {
+	font-size: 20px;
+}
+
+#quinn-popup-modal .row {
+    margin-left: 0px!important;
+}
+
+#quinn-popup-modal .btn{
+	cursor: pointer;
+	margin: 0px;
+	text-align: center;
+}
+
+#quinn-popup-modal .mfp-close {
+    color: #ccc;
+	font-weight: bold;
+    padding-right: 10px;
+    font-size: 30px;
+	cursor: pointer;
+}
+
+#quinn-popup-modal .marginLeft15 {
+    margin-left: 15px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #quinn-popup-modal .popup-image {
+        background-position-y: -20px;
+    }
+    #quinn-popup-modal .btn {
+     padding: 4px 20px 3px 20px!important;   
+    }
+}
+
+@media (min-width: 1200px) {
+    /* COVID-19 Updates Popup */
+    #quinn-popup-modal[data-popup='quinn_popup_34976_2020_03_30_12_08_07_page_2'] {
+        width: 40%;
+        margin-left: 30%;
+    }
+}

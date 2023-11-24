@@ -1,0 +1,64 @@
+{
+    "key": "group_611df8dac0613",
+    "title": "[Block] Homepage - Deals and Specials",
+    "fields": [
+        {
+            "key": "field_611df8f2682d7",
+            "label": "Deals and Specials",
+            "name": "add_deals_and_specials",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "deals-specials",
+                "page",
+                "post"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_630f9a236047a",
+            "label": "Link",
+            "name": "dealers_specials_link",
+            "type": "link",
+            "instructions": "This link appears underneath the deals slider.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/homepage-deals-and-specials"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1661970822
+}

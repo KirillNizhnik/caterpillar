@@ -1,0 +1,58 @@
+{
+    "key": "group_61699ce436f35",
+    "title": "Family specific settings",
+    "fields": [
+        {
+            "key": "field_61699cf24ea52",
+            "label": "Show Subfamilies",
+            "name": "show_subfamilies",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "When set to OFF, this will not show any of the subfamilies for this family, and will instead show all products to that family.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "ON": "ON",
+                "OFF": "OFF"
+            },
+            "default_value": "ON",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "cat_new_machine_family"
+            }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "cat_new_power_family"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1700583575
+}

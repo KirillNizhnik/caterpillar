@@ -1,0 +1,150 @@
+.wysiwyg {
+	position: relative;
+	/*	padding: 48px 0 70px;*/
+	z-index: 9;
+}
+
+.wysiwyg-white-background {
+	background: #ffffff;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: var(--section-margins);
+	margin-bottom: var(--section-margins);
+}
+
+.wysiwyg-white-background+.wysiwyg-white-background,
+.wysiwyg-white-background+.accordion,
+.post-content-wrap>.wysiwyg-white-background,
+.container+.wysiwyg-white-background,
+.wysiwyg-white-background+.cat-card-section,
+.cat-card-section+.wysiwyg-white-background {
+	padding-top: 0;
+}
+
+.post-content-wrap>.inner-cta+.wysiwyg-white-background {
+	padding-top: 48px;
+}
+
+.wysiwyg-white-background+.cat-card-section .row {
+	margin-top: 0;
+}
+
+.wysiwyg-white-background+.page-footer {
+	border-top: 1px solid #DDDDDD
+}
+
+
+
+.wysiwyg-grey-background {
+	background: #F5F5F5;
+}
+
+.wysiwyg-textured-background {
+	position: relative;
+}
+
+.wysiwyg-textured-background:after {
+	content: '';
+	background: url(/wp-content/themes/quinn/assets/img/wysiwyg-textured.jpg) center center no-repeat transparent;
+	background-size: cover;
+	background-position: right;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	object-fit: cover;
+	-o-object-fit: cover;
+	font-family: 'object-fit: cover;';
+}
+
+/*.wysiwyg-textured-background-image {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.wysiwyg-textured-background-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+	font-family: 'object-fit: cover;';
+}*/
+
+.wysiwyg-content {
+	width: 100%;
+	max-width: 598px;
+	margin: 0 auto;
+}
+
+.wysiwyg h1,
+.wysiwyg h2,
+.wysiwyg h3,
+.wysiwyg h4,
+.wysiwyg h5,
+.wysiwyg h6 {
+	color: #262A2C;
+}
+
+.wysiwyg p {
+	color: #484C4E;
+}
+
+.wysiwyg-content-space {
+	padding-top: 20px;
+}
+
+.wysiwyg ul li {
+	color: #484C4E;
+}
+
+@media (min-width: 768px) {
+
+	.wysiwyg-content-space {
+		padding-top: 28px;
+	}
+
+	.wysiwyg-content-image img.alignright,
+	.wysiwyg-content-image .wp-caption.alignright {
+		max-width: 58%;
+	}
+}
+
+@media (min-width: 1025px) {
+
+	.page-id-22 .wysiwyg {
+		padding: 78px 0 0;
+	}
+
+	.wysiwyg-content {
+		max-width: 1132px;
+	}
+
+	.wysiwyg-content-space {
+		padding-top: 35px;
+	}
+
+	.wysiwyg-content-image img.alignright,
+	.wysiwyg-content-image .wp-caption.alignright {
+		max-width: 48.8%;
+	}
+
+	.fluid-width-video-wrapper {
+		width: 80% !important;
+		padding: 0 !important;
+		height: 500px;
+	}
+
+}
+
+.wysiwyg+.contact-blocks {
+	padding-top: 0;
+}
+
+.wysiwyg.wysiwyg-location .wysiwyg-content {
+	max-width: unset;
+}

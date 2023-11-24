@@ -1,0 +1,77 @@
+.notification-popup {
+	position: fixed;
+	bottom: 0;
+
+	display: none;
+	width: 100%;
+	padding: 60px 30px 25px;
+
+	font-size: 14px;
+	color: var( --colorText );
+	background-color: var( --colorBg );
+
+	box-shadow: 0 0 10px 0 rgba( 0,0,0,.05 );
+	z-index: 10000;
+}
+
+.notification-popup.is-visible {
+	display: block;
+}
+
+.notification-popup__close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 50%;
+	background-color: transparent;
+	-webkit-appearance: none;
+}
+
+.notification-popup__close:hover {
+	background-color: var( --colorText );
+}
+
+.notification-popup__close:before,
+.notification-popup__close:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	width: 2px;
+	height: 25px;
+	background-color: var( --colorText );
+	transform: translate( -50%, -50% );
+}
+
+.notification-popup__close,
+.notification-popup__close:before,
+.notification-popup__close:after {
+	transition: .25s linear;
+}
+
+.notification-popup__close:hover:before,
+.notification-popup__close:hover:after {
+	background-color: var( --colorBg );
+}
+
+.notification-popup__close:before {
+	transform: translate( -50%, -50% ) rotateZ( -45deg );
+}
+
+.notification-popup__close:after {
+	transform: translate( -50%, -50% ) rotateZ( 45deg );
+}
+
+
+@media( min-width: 769px ) {
+	.notification-popup {
+		max-width: 500px;
+		bottom: 10px;
+		right: 10px;
+	}
+}

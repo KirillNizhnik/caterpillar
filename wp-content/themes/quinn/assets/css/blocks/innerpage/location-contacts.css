@@ -1,0 +1,121 @@
+.location-contacts.section-margins {
+	padding: 0 0 80px;
+}
+
+.lc-block {
+	padding: 25px 35px;
+	background-color: #f5f5f5;
+	margin-bottom: 10px;
+}
+
+i.icon.icon-hours {
+	background-image: url( https://www.quinncompany.com/wp-content/uploads/2022/10/time.png );
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	margin-bottom: -4px;
+	margin-right: 8px;
+}
+
+i.icon.icon-phone {
+	background-image: url( https://www.quinncompany.com/wp-content/uploads/2022/10/call.png );
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	margin-bottom: -4px;
+	margin-right: 8px;
+}
+
+i.icon.icon-printer {
+	background-image: url( https://www.quinncompany.com/wp-content/uploads/2022/10/fax.png );
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	margin-bottom: -4px;
+	margin-right: 8px;
+}
+
+i.icon.icon-printer + a{
+	font-weight: 400;
+	color:#000;
+}
+
+i.icon.icon-printer + a:hover{
+	color: #fec81d;
+}
+
+.lc-block .numbers-base p:first-of-type {
+	margin-right: 30px;
+}
+
+.lc-block h5 {
+	margin: 0 0 10px;
+}
+
+.lc-block p {
+	margin: 0 0 5px;
+}
+
+.lc-block .numbers-base p {
+	margin-bottom: 0;
+}
+
+.lc-block .numbers-base {
+	display: flex;
+	flex-direction: row;
+}
+
+.iframe-wrapper,
+.iframe-wrapper p {
+	width: 100%;
+	height: 300px;
+}
+
+.iframe-wrapper {
+	min-height: 340px;
+}
+
+.iframe-wrapper p iframe {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+	font-family: 'object-fit: cover;';
+}
+
+.lc-block:first-of-type {
+	margin-top: 10px;
+}
+
+.lc-block:last-of-type {
+	margin-bottom: 0;
+}
+
+@media ( min-width: 1025px ) {
+	.locations-outer-wrap {
+		max-width: 1132px;
+		margin: 0 auto;
+	}
+}
+
+@media ( min-width: 1200px ) {
+	.location-contacts.section-margins {
+		padding: 0 0 80px;
+	}
+	.locations-outer-wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.location-contacts .half-width {
+		width: calc( 50% - 15px );
+		display: inline-block;
+	}
+	.iframe-wrapper,
+	.iframe-wrapper p {
+		height: 100%;
+	}
+	.lc-block:first-of-type {
+		margin-top: 0px;
+	}
+}

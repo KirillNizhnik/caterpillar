@@ -1,0 +1,420 @@
+<?php
+namespace Cat\Models;
+
+/**
+ * CNF_Importer_Family
+ * Imports custom Data for families.
+ *
+ * @Package CAT New Feed/Importer
+ * @category importer
+ * @author WebFX
+ */
+
+if ( ! defined('ABSPATH') )
+	exit;
+
+
+
+class CPC_Family
+{
+	public $name;
+	public $parent;
+	public $class;
+	public $family_id;
+	public $short_description;
+	public $long_description;
+	public $links = array();
+    public $features = array();
+    public $images = array();
+    public $videos = array();
+    public $spec_priority = array();
+    public $wp_term;
+    public $taxonomy;
+    public $xml;
+
+    public $is_rental = false;
+
+    private $_industries;
+
+
+	public function __construct($xml='')
+	{
+        if(!empty($xml)){
+            $this->xml = $xml;
+            $this->process();
+        }
+	}
+
+
+
+    public function create_term()
+    {
+        $options = array(
+            'description' => ''
+            ,'parent'     => 0
+        );
+
+        if($this->parent){
+            $parent = get_term_by( 'name', esc_attr( $this->parent ), $this->taxonomy);
+            if ($parent)
+                $options['parent'] = $parent->term_id;
+        }
+
+        // check if this name is already a term
+        if(! $term = term_exists($this->name, $this->taxonomy, $options['parent'])) {
+
+            // insert the new term
+            $term = wp_insert_term($this->name, $this->taxonomy, $options);
+            if (is_wp_error($term))
+            {
+                echo "Error inserting term:\n";
+                echo $this->taxonomy . "\n";
+                echo $this->name . "\n";
+                print_r($options);
+                die;
+            }
+        }
+        $this->wp_term = $term;
+
+        return $this;
+    }
+
+
+    /**
+     * Saves the custom meta for a family.
+     *
+     * @param [int] $term_id The term_id of the family.
+     * @return null
+     */
+
+    public function save()
+    {
+        // get our new term meta created by this model
+        $vars = get_object_vars($this);
+
+        // remove the keys we dont need
+        unset($vars['xml']);
+        unset($vars['wp_term']);
+        unset($vars['name']);
+        unset($vars['_industries']);
+
+        foreach($vars as $k => $v){
+            add_cat_term_meta($this->wp_term['term_id'], $k, $v, true) || update_cat_term_meta($this->wp_term['term_id'], $k, $v);
+        }
+    }
+
+    public function industries()
+    {
+        if(! empty($this->_industries)) {
+            return $this->_industries;
+        }
+
+        global $wpdb;
+        $ids = $wpdb->get_col($wpdb->prepare(
+            "SELECT industry_id
+             FROM   {$wpdb->prefix}cat_term_industries
+             WHERE  object_id = %d AND object_type = 'term'
+            ",
+            $this->wp_term->term_id
+        ));
+
+        if($ids) {
+            foreach($ids as $post_id){
+                $this->_industries[] = get_the_title($post_id);
+            }
+        }
+
+        return $this->_industries;
+    }
+
+
+
+    /**
+     * Starts the processing of a family
+     *
+     * @return null
+     */
+
+    public function process()
+    {
+        if(empty($this->xml))
+            return false;
+
+        $group = $this->xml->product_group;
+
+        // turn attrs into basic properties
+    	$this->process_attrs($group);
+
+        // set the properties to the model
+    	$this->process_properties($group);
+
+        // process any images
+    	if(isset($group->listofimages))
+    		$this->process_images($group->listofimages);
+
+        // process all of the marketing content
+    	if(isset($group->marketing_content))
+    		$this->process_marketing($group->marketing_content);
+
+        // process any links
+        if(isset($group->listoflinks))
+            $this->process_links($group->listoflinks);
+
+        // process sales features
+        if(isset($group->listofsalesfeatures))
+            $this->process_features($group->listofsalesfeatures);
+
+        // process any technical specs
+        if(isset($group->listoftechspecgroups))
+            $this->process_specs($group->listoftechspecgroups);
+
+        return $this;
+    }
+
+
+
+    /**
+     * Processes the attributes and basic elements
+     *
+     * @param [simple xml object] $item  The xml object to process
+     * @return null
+     */
+
+    private function process_attrs($item)
+    {
+        $attrs = $item->attributes();
+
+        foreach($attrs as $k => $v)
+        {
+            $key = trim($k);
+
+            if($key == 'id')
+                $this->family_id = trim($v);
+            else
+                $this->$key = trim($v);
+        }
+
+		$this->name = trim($item->name);
+		$this->updated = trim($item->last_modified);
+    }
+
+
+
+    /**
+     * Processes the properties and set them to the model
+     *
+     * @param [simple xml object] $item  The xml object to process
+     * @return null
+     */
+
+    private function process_properties($item)
+    {
+    	if(!isset($item->property))
+    		return;
+
+    	foreach($item->property as $p)
+    	{
+    		$attrs = $p->attributes();
+
+            $type = trim($attrs['type']);
+			$this->$type = wpautop(trim($p));
+    	}
+    }
+
+
+
+    /**
+     * Processes the images and set them to the model
+     *
+     * @param [simple xml object] $item  The xml image object to process
+     * @return null
+     */
+
+    private function process_images($images)
+    {
+    	foreach($images->image as $i)
+    	{
+            $attrs = $i->attributes();
+            $url = explode('?', trim($i->url));
+
+            $image = new \stdClass();
+            $image->src = $url[0];
+            $image->type = trim($attrs['type']);
+
+			$this->images[trim($attrs['id'])] = $image;
+    	}
+    }
+
+
+
+    /**
+     * Processes the marketing content and set them to the model
+     *
+     * @param [simple xml object] $item  The xml markeeting object to process
+     * @return null
+     */
+
+    private function process_marketing($marketing)
+    {
+    	foreach ($marketing->content as $c)
+        {
+            $meta = $this->process_marketing_meta($c);
+
+            $attrs = $c->attributes();
+
+            switch(trim($attrs['type']))
+            {
+                case 'marketing-hero':
+                    $image = new \stdClass();
+                    $image->title = trim($c->title);
+                    $image->text = trim($c->text);
+                    $image->type = trim($attrs['type']);
+
+                    $url = explode('?', trim($c->media->source));
+                    $image->src = $url[0];
+                    $this->images[trim($attrs['id'])] = $image;
+                    break;
+
+                case 'gallery-image':
+                    $images = array();
+
+                    foreach($c->content as $content){
+
+                        $image = new \stdClass();
+                        $image->title = trim($content->title);
+                        $image->type = trim($attrs['type']);
+
+                        $url = explode('?', trim($content->media->source));
+                        $image->src = $url[0];
+                        $images[trim($content->attributes()->id)] = $image;
+                    }
+
+                    $this->images = $images+$this->images;
+                    break;
+
+                case 'section-overview':
+                    $this->overview = new \stdClass();
+                    $this->overview->text = trim($c->text);
+
+                    if(isset($c->media)){
+                        $this->overview->image = trim($c->media->source);
+                    }
+                    break;
+
+                case 'gallery-video':
+                    foreach($c->content as $content){
+
+                        // in families video/youtube are just play icons
+                        // that aren't needed.
+                        if(trim($content->media->attributes()->type) == 'video/youtube') continue;
+
+                        $video = new \stdClass();
+                        $video->title = trim($content->title);
+
+                        if(isset($content->text))
+                            $video->text = trim($content->text);
+
+                        $video->type = trim($content->media->attributes()->type);
+                        $video->analytics_code = trim($content->attributes()->analytics_code);
+                        $video->src = trim($content->media->source);
+
+                        $this->videos[trim($content->attributes()->id)] = $video;
+                    }
+                    break;
+            }
+
+        } // each content
+    }
+
+
+
+    /**
+     * process marketing item, meta tags, to reference for country
+     *
+     * @param [simple xml object] $item  The xml markeeting object to process
+     * @return [array] Single level array of tags;
+     */
+
+    private function process_marketing_meta($item)
+    {
+        $return = array();
+        foreach($item->metadata as $meta)
+        {
+            foreach ($meta->tag as $tag)
+            {
+                $return[] = trim($tag);
+            }
+        }
+
+        return $return;
+    }
+
+
+
+    /**
+     * Processes the link content and sets them to the model
+     *
+     * @param [simple xml object] $item  The xml link object to process
+     * @return null
+     */
+
+    private function process_links($links)
+    {
+        foreach ($links->link as $l)
+        {
+            $label = trim($l->link_label);
+            $url = trim($l->link_url);
+            $type = trim($l->type);
+
+            $this->links[] = array(
+                'label' => $label
+                ,'url'  => $url
+                ,'type' => $type
+            );
+        }
+    }
+
+
+
+    /**
+     * Processes the sales features content and sets them to the model
+     *
+     * @param [simple xml object] $item  The xml feautres object to process
+     * @return null
+     */
+
+    private function process_features($features)
+    {
+        foreach($features->salesfeature as $f)
+        {
+            $this->features[] = array(
+                 'name'    => trim($f->name)
+                ,'content' => wpautop(trim($f->paragraph))
+            );
+        }
+    }
+
+
+
+    /**
+     * Processes the specs to save priority order with family
+     * This gets used by the product model when inserting specs to DB
+     *
+     * @param [simple xml object] $item  The xml feautres object to process
+     * @return null
+     */
+
+    private function process_specs($specgroups)
+    {
+        foreach($specgroups->techspecgroup as $group)
+        {
+
+            foreach($group->listoftechspecs->techspec as $spec)
+            {
+                $spec_attrs = $spec->attributes();
+                $this->spec_priority[trim($spec_attrs['id'])] = trim($spec->priority_sequence);
+            }
+        }
+    }
+
+} // end CNF_Importer_Family

@@ -1,0 +1,168 @@
+.masthead {
+	position: relative;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+	        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.masthead-slider-item {
+	position: relative;
+}
+
+.masthead-image {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.masthead-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+	font-family: 'object-fit: cover;';
+	-o-object-position: 62%;
+	   object-position: 62%;
+}
+
+.masthead-overlay {
+	width: 100%;
+	padding: 75px 0 190px;
+	position: relative;
+	z-index: 9;
+	background: linear-gradient(180deg, rgba(38, 42, 44, 0.596) 0%, rgba(38, 42, 44, 0.588) 38.9%, rgba(38, 42, 44, 0) 57.1%, rgba(38, 42, 44, 0) 100%);
+}
+
+.masthead-content {
+	text-align: center;
+	color: #ffffff;
+}
+
+.masthead-content h1 {
+	margin: 0 0 32px;
+	font-size: 38px;
+	line-height: 1em;
+	letter-spacing: 2px;
+	color: #fff;
+}
+
+.masthead-content h1 span {
+	font-size: 21px;
+}
+
+.masthead-homepage-slider .slick-dots {
+    position: absolute;
+    bottom: 154px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.masthead-homepage-slider .slick-dots li {
+	padding: 0;
+	margin: 0;
+}
+
+.masthead-homepage-slider .slick-dots li::after,
+.masthead-homepage-slider .slick-dots li::before {
+	display: none;
+	margin-right:
+}
+
+.masthead-homepage-slider .slick-dots li button {
+	font-size: 0px;
+	background: rgb(255,255,255,40%);
+	width: 60px;
+	height: 8px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	-webkit-clip-path: polygon(100% 0%, 92% 100%, 0% 100%, 10% 0);
+	        clip-path: polygon(100% 0%, 92% 100%, 0% 100%, 10% 0);
+}
+
+.masthead-homepage-slider .slick-dots li.slick-active button {
+	background: #ffffff;
+}
+
+.masthead-homepage-slider .slick-dots li:first-child button {
+	-webkit-clip-path: polygon(100% 0%, 92% 100%, 0% 100%, 0% 0);
+	        clip-path: polygon(100% 0%, 92% 100%, 0% 100%, 0% 0);
+}
+
+.masthead-homepage-slider .slick-dots li:last-child button {
+	-webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 10% 0);
+	        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 10% 0);
+}
+
+.masthead-slider-item:not(:first-of-type) {display: none}
+
+
+
+@media (min-width: 768px) {
+	.masthead-overlay {
+		padding: 138px 0 300px;
+	}
+
+	.masthead-content h1 span {
+	    font-size: 42px;
+	}
+
+	.masthead-content h1 {
+		font-size: 70px;
+		margin: 0 0 40px;
+	}
+
+	.masthead-homepage-slider .slick-dots li button {
+		width: 85px;
+		height: 10px;
+	}
+
+	.masthead-image img {
+		-o-object-position: 50%;
+		   object-position: 50%;
+	}
+
+	.masthead-homepage-slider .slick-dots {
+		bottom: 232px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.masthead {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+		        clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+	}
+
+	.masthead-overlay {
+		padding: 82px 0 324px;
+		background: linear-gradient(92.06deg, rgba(38, 42, 44, 0.596) 3.32%, rgba(38, 42, 44, 0.588) 40.92%, rgba(38, 42, 44, 0) 58.51%, rgba(38, 42, 44, 0) 99.97%);
+	}
+
+	.masthead-content {
+		text-align: left;
+	}
+
+	.masthead-content h1 {
+		font-size: 87px;
+		margin: 0 0 35px;
+	}
+
+	.masthead-content h1 span {
+		font-size: 52px;
+	}
+
+	.masthead-homepage-slider .slick-dots {
+	    bottom: 250px;
+	    text-align: left;
+	    padding: 0;
+	    margin: 0 auto;
+	    max-width: 1364px;
+	    left: 50%;
+	    -webkit-transform: translate(-50%, 0);
+	            transform: translate(-50%, 0);
+	}
+}

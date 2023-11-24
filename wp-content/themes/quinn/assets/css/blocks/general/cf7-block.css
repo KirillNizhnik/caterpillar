@@ -1,0 +1,251 @@
+.inner-contact {
+	position: relative;
+	padding: 42px 0 45px;
+}
+
+.contact-form {
+	padding: 25px 0 35px;
+}
+
+.contact-form {
+	padding: 26px 0 45px;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+	line-height: 1.66em;
+	padding: 11px 24px;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	font-weight: bold;
+	font-family: 'Roboto Condensed', sans-serif;
+	border: none;
+	text-align: center;
+	background: #FFCC00;
+	color: #262A2C;
+	box-shadow: 0 3px 15px rgb(88, 71, 0, 10%);
+	width: 100%;
+	transition: color .4s ease-in-out;
+	display: inline-block;
+}
+
+.form-field-button {
+	position: relative;
+	margin: 0 0 24px;
+}
+
+.form-field-button::after {
+	content: "\e907";
+	position: absolute;
+	top: 50%;
+	right: 25%;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	font-size: inherit;
+	transition: color .4s ease-in-out;
+	font-family: 'icomoon' !important;
+}
+
+.wpcf7-form-control.wpcf7-submit:hover {
+	background: #262A2C;
+	color: #ffffff;
+}
+
+.form-field-button:hover::after {
+	color: #FFCC00;
+}
+
+.form-field {
+	margin-bottom: 30px;
+}
+
+.choices {
+	box-shadow: 0 1px 10px rgb(61 67 70 / 8%);
+}
+
+.choices__inner {
+	border: 1px solid #E5E5E5;
+	background-color: #F5F5F5;
+	padding: 10px 44px 10px 14px !important;
+	color: #3D4346;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+	font-size: 16px;
+	height: 48px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.is-focused .choices__inner,
+.is-open .choices__inner {
+	border-color: #FFCC00;
+}
+
+.choices[data-type*='select-one'] .choices__input {
+	display: none;
+}
+
+.choices[data-type*='select-one']:after {
+	content: "\e905";
+	font-family: 'icomoon';
+	right: 20px;
+	top: 0;
+	margin: 0 !important;
+	border: none;
+	width: auto;
+	height: auto;
+	color: #FFCC00;
+	font-size: 16px;
+	line-height: 48px;
+}
+
+.form-field {
+	position: relative;
+}
+
+.wpcf7-not-valid-tip:before {
+	content: "\e90f";
+	color: #ff3b3b;
+	font-family: 'icomoon';
+	position: absolute;
+	left: -30px;
+	font-size: 15px;
+}
+
+span.wpcf7-not-valid-tip {
+	/*display: none;*/
+
+
+}
+
+.wpcf7-not-valid-tip {
+	position: absolute;
+	top: 85px;
+	left: 30px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.yourmessage .error {
+	top: 125px;
+}
+
+select.wpcf7-not-valid,
+textarea.wpcf7-not-valid,
+input.wpcf7-not-valid,
+.wpcf7-not-valid .choices {
+	border: 1px solid #ff3b3b !important;
+}
+
+@media(min-width: 768px) {
+	.inner-contact {
+		padding: 46px 0;
+	}
+
+	.inner-contact-wrapper {
+		width: 100%;
+		max-width: 598px;
+		margin: 0 auto 0;
+	}
+
+	.form-field {
+		margin-bottom: 36px;
+	}
+
+	.form-field-button::after {
+		right: 39%;
+	}
+
+	.choices__inner {
+		height: 56px;
+		padding: 15px 44px 15px 14px !important;
+	}
+
+	.choices[data-type*='select-one']:after {
+		line-height: 56px;
+	}
+
+	.wpcf7-not-valid-tip {
+		top: 100px;
+	}
+
+	.yourmessage .error {
+		top: 120px;
+	}
+
+}
+
+@media(min-width: 1025px) {
+	.inner-contact {
+		padding: 64px 0;
+	}
+
+	.inner-contact-wrapper {
+		max-width: 1132px;
+	}
+
+	.contact-form {
+		padding: 50px 0 58px;
+	}
+
+	.form-field {
+		margin-bottom: 40px;
+	}
+
+	.choices__inner {
+		height: 60px;
+		padding: 16px 44px 16px 18px !important;
+	}
+
+	.choices[data-type*='select-one']:after {
+		line-height: 60px;
+	}
+
+	.yourmessage .error {
+		top: 100px;
+	}
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin-right: 4px;
+}
+
+.wpcf7-radio .wpcf7-list-item-label {
+	margin: 0 0 10px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #262A2C;
+	letter-spacing: .4px;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-right: 24px;
+}
+
+
+
+.wpcf7-form .wpcf7-response-output {
+    background-color: #262A2C;
+    color: white;
+    font-weight: 700;
+    padding: 32px;
+    text-transform: uppercase;
+}
+
+.wpcf7-form .wpcf7-response-output:empty {
+	display: none;
+}
+
+.wpcf7-form[data-status="sent"] .wpcf7-response-output {
+	background-color:#1DC200;
+}
+
+
+.wpcf7-form[data-status="invalid"] .wpcf7-response-output,
+.wpcf7-form[data-status="spam"] .wpcf7-response-output,
+.wpcf7-form[data-status="failed"] .wpcf7-response-output {
+	background-color: #820016;
+}

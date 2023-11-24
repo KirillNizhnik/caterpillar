@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    
+    WebFX CF7 Customizations - Global styling for all CF7 Forms
+
+    Add custom CF7 form styling to this file if it should be applied to all CF7 forms on the site
+    Otherwise, put your slider-specific styles in individual block stylesheets
+
+\*------------------------------------*/
+
+
+/* Default Radio/Checkbox Style (if using CF7) */
+.wpcf7-radio .wpcf7-list-item,
+.wpcf7-checkbox .wpcf7-list-item {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    /* incase items go to 2 lines */
+}
+
+.wpcf7-radio .wpcf7-list-item-label,
+.wpcf7-checkbox .wpcf7-list-item-label {
+    margin-left: 5px;
+}
+
+/* CF7 Validation (Remove if not using CF7) */
+
+/* Individual field error messages */
+.wpcf7-not-valid-tip {
+
+}
+
+/* Entire form error message */
+.wpcf7-response-output {
+
+}
+
+/* Styling for fields that have errors */
+select.wpcf7-not-valid,
+textarea.wpcf7-not-valid,
+input.wpcf7-not-valid,
+.wpcf7-not-valid .choices {
+    
+}

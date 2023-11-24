@@ -1,0 +1,153 @@
+
+.facetwp-facet button {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 75px;
+    color: #262A2C;
+  font-size: 18px;
+  padding: 13px 33px;
+  display: inline-block;
+    text-transform: uppercase;
+  line-height: 1.66em;
+  letter-spacing: .075em;
+  font-weight: 700;
+  font-family: 'Roboto Condensed',sans-serif;
+  border: none;
+  text-align: center;
+}
+
+.facetwp-load-more {
+    background-color: #FC0;
+
+}
+
+.facetwp-load-more::after {
+    content: "\e907";
+    position: relative;
+    font-family: 'icomoon';
+    font-size: 14px;
+    margin-left: 8px;
+    transition: color .4s ease-in-out;
+ -webkit-transform: rotate(90deg);
+         transform: rotate(90deg);
+  display: inline-block;
+}
+
+.facetwp-load-more:hover {
+    background: #262A2C;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.image-cards-block-load-content{
+	margin-bottom: 45px;
+}
+
+.image-cards-block {
+    background-color: #fff !important;
+    box-shadow: 0 8px 24px rgb(74,79,82,10%);
+	height: 100%;
+}
+
+.image-cards-block  a{
+	display: flex;
+flex-direction: column;
+height: 100%;
+background: #fff;
+color: #484C4E;
+}
+
+.image-cards {
+    margin-top: 80px;
+}
+
+.image-cards-category-name {
+    color: #cca712;
+    font-weight: 500;
+    font-size: 17px;
+    display: none;
+}
+
+.image-cards-block-content h6,
+.image-cards-block-content h4,
+.image-cards-block-content p {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.image-cards-block-content p {
+    margin-bottom: 70px;
+    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.image-cards-block-content h4 {
+    margin-top: 45px;
+}
+
+.image-cards-block-content .btn-primary {
+    width: 100%;
+	margin-top: auto
+}
+
+.image-cards-block-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-cards .row{
+	display: flex;
+	flex-wrap: wrap
+
+}
+
+.image-cards-block-image{
+	position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 50%;
+}
+
+.image-cards-block-image img {
+	position: absolute;
+	-o-object-fit: cover;
+	   object-fit: cover;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+        height: 100%;
+}
+
+
+.image-cards-block a:hover {
+    color: #25292c !important;
+}
+
+
+@media (min-width: 600px) {
+
+
+
+}
+
+@media (min-width: 768px) {
+
+
+
+}
+
+@media (min-width: 1025px) {
+
+	.image-cards-block-content h6,
+	.image-cards-block-content h4,
+	.image-cards-block-content p {
+	    margin-right: 90px;
+	    margin-left: 90px;
+	}
+
+}

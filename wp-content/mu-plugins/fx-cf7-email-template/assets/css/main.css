@@ -1,0 +1,232 @@
+/* FX Contact Form 7 Email Template */
+
+#FX-CF7-ET-preview,
+.FX-CF7-ET-preview,
+.FX-CF7-ET-preview-wrapper {
+  position: relative;
+}
+
+#FX-CF7-ET-editor-data {
+  color: green;
+}
+
+#FX-CF7-ET,
+.FX-CF7-ET {
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Preview Edits */
+
+#contact-form-editor .contact-form-editor-panel .FX-CF7-ET-preview-title,
+#contact-form-editor .contact-form-editor-panel .FX-CF7-ET-code-title {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 14px;
+}
+
+.data-editable {
+  box-shadow: 0px 0px 0px 6px white, 0px 0px 0px 9px red !important;
+  cursor: pointer;
+}
+
+.FX-CF7-ET-actions {
+  pointer-events: none;
+  position: absolute;
+  z-index: 99999999;
+}
+
+.FX-CF7-ET-global-btn,
+.FX-CF7-ET-defaults-btn,
+.FX-CF7-ET-actions button {
+  background: red;
+  border: red;
+  border-radius: 0;
+  color: white;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.switch-view-btn {
+  background: gray;
+  border: gray;
+  border-radius: 0;
+  color: white;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.switch-view-btn.active {
+  background: blue;
+  border: blue;
+}
+
+/* Modal */
+
+.FX-CF7-ET-modal {
+  background-color: white;
+  box-shadow: -3px 45px 5px 20px rgba(0, 0, 0, 0.25);
+  display: block;
+  height: 100%;
+  padding: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(0);
+  transition: all 260ms ease-in-out;
+  width: 60%;
+  z-index: 99;
+}
+
+.FX-CF7-ET-modal.FX-CF7-ET-modal--hidden {
+  box-shadow: none;
+  transform: translateX(100%);
+}
+
+.FX-CF7-ET-modal-close {
+  background: #f9f9f9;
+  border: 0;
+  border-bottom: 3px solid #D8D8D8;
+  border-radius: 0;
+  box-shadow: none;
+  color: #495057;
+  cursor: pointer;
+  font-size: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+}
+
+.FX-CF7-ET-modal-title {
+  border-bottom: 1px solid #D8D8D8;
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+
+.FX-CF7-ET-form-footer {
+  border-top: 1px solid #D8D8D8;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+/* Forms */
+
+.FX-CF7-ET-form {
+  font-size: 16px;
+}
+
+.FX-CF7-ET-form label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+.FX-CF7-ET-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.FX-CF7-ET-form .form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+input.form-control {
+  height: calc(1.5em + .75rem + 2px);
+}
+
+.form-group--variant .form-control {
+  display: inline-block;
+  margin-right: 10px;
+  width: 38%;
+}
+
+.FX-CF7-ET-form .form-control:hover,
+.FX-CF7-ET-form .form-control:focus {
+  color: #007bff;
+  background-color: #fff;
+  border-color: #007bff; /* #80bdff; */
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25)
+}
+
+.FX-CF7-ET-form-submit {
+  color: #fff;
+  background-color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #007bff;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.FX-CF7-ET-form-remove {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  font-size: 26px;
+  margin: 0;
+  padding: 6px 5px;
+}
+
+.FX-CF7-ET-form-remove:active,
+.FX-CF7-ET-form-remove:hover,
+.FX-CF7-ET-form-remove:focus {
+  border: 0;
+  box-shadow: none;
+  color: #007bff;
+  outline: 0 none;
+}
+
+#FX-CF7-ET-new-field {
+  background-color: white;
+  color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #007bff;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.FX-CF7-ET-form-content .drag-handler {
+  border-right: 1px solid rgba(0, 0, 0, 0.10);
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 18px;
+  margin-right: 3px;
+  padding: 2px 10px 6px;
+  text-align: center;
+}

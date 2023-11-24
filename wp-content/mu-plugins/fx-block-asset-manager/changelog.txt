@@ -1,0 +1,3 @@
+Version: 0.1.2
+- Create Changelog
+- Add fx_include_cf7_scripts filter

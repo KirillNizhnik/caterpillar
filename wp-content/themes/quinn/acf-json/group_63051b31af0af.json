@@ -1,0 +1,73 @@
+{
+    "key": "group_63051b31af0af",
+    "title": "[BLOCK] Image with alternate Spanish image",
+    "fields": [
+        {
+            "key": "field_63051b5b7cdd3",
+            "label": "English Image",
+            "name": "english_image",
+            "type": "image",
+            "instructions": "Place the image you would like to show when the default site (english) is showing.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_63051c307cdd4",
+            "label": "Spanish Image",
+            "name": "spanish_image",
+            "type": "image",
+            "instructions": "Place the image you would like to show when the Spanish version of the site is showing.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/image-w-alternate"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1661279940
+}

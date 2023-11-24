@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmms>
+    <product_group id="405" level="1" sort="2">
+        <name lang="en">Attachments</name>
+        <last_modified>2021-07-01T11:33:12-05:00</last_modified>
+        <listofgroups>
+            <product_group id="408" level="2" sort="20">
+                <name lang="en">Augers</name>
+                <last_modified>2021-07-01T11:38:49-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="146" level="3" sort="10">
+                        <name lang="en">Augers</name>
+                        <last_modified>2021-12-03T03:19:38-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000033199" sort="30">
+                                <nondisplayname lang="en">bcp_218-3205_a7b, mhe</nondisplayname>
+                                <last_modified>2021-10-21T18:26:14-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000033200" sort="9223372036854775807">
+                                <nondisplayname lang="en">bcp_220-8275_a19b, mhe</nondisplayname>
+                                <last_modified>2021-09-28T17:42:14-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="17722550" sort="9223372036854775807">
+                                <nondisplayname lang="en">bcp_248-5787_a26b, mhe</nondisplayname>
+                                <last_modified>2021-10-21T18:41:29-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="411" level="2" sort="70">
+                <name lang="en">Brooms</name>
+                <last_modified>2021-07-01T11:38:39-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="19" level="3" sort="3005002000">
+                        <name lang="en">Angle Brooms</name>
+                        <last_modified>2021-12-03T03:19:32-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000028139" sort="40">
+                                <nondisplayname lang="en">bcp_487-8502_ba25, hyd, iso, wtr</nondisplayname>
+                                <last_modified>2021-10-21T18:18:36-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028150" sort="40">
+                                <nondisplayname lang="en">bcp_487-8495_ba25, hyd, fus</nondisplayname>
+                                <last_modified>2021-10-21T18:20:01-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028152" sort="40">
+                                <nondisplayname lang="en">bcp_487-8499_ba25, hyd, iso</nondisplayname>
+                                <last_modified>2021-10-21T18:17:56-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028162" sort="40">
+                                <nondisplayname lang="en">bcp_157-5880_ba25, hyd, it</nondisplayname>
+                                <last_modified>2021-10-25T17:42:26-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028182" sort="40">
+                                <nondisplayname lang="en">bcp_164-8484_ba25, hyd, ho, wtr</nondisplayname>
+                                <last_modified>2021-10-25T17:41:31-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="15970481" sort="40">
+                                <nondisplayname lang="en">bcp_164-8487_ba25, hyd, it, wtr</nondisplayname>
+                                <last_modified>2021-10-21T20:33:32-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="15970484" sort="40">
+                                <nondisplayname lang="en">bcp_487-8496_ba25, hyd, fus, wtr</nondisplayname>
+                                <last_modified>2021-10-21T20:33:48-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="18110127" sort="40">
+                                <nondisplayname lang="en">bcp_164-8486_ba25, hyd, it</nondisplayname>
+                                <last_modified>2021-10-21T19:07:23-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028163" sort="50">
+                                <nondisplayname lang="en">bcp_487-8497_ba25, man, iso</nondisplayname>
+                                <last_modified>2021-10-21T18:19:19-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028166" sort="50">
+                                <nondisplayname lang="en">bcp_487-8498_ba25, man, fus</nondisplayname>
+                                <last_modified>2021-10-25T17:43:55-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028180" sort="50">
+                                <nondisplayname lang="en">bcp_164-8485_ba25, man, it</nondisplayname>
+                                <last_modified>2021-10-27T17:23:49-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028138" sort="60">
+                                <nondisplayname lang="en">bcp_497-9456_ba30, hyd, fus, wtr</nondisplayname>
+                                <last_modified>2021-10-25T17:41:42-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028151" sort="60">
+                                <nondisplayname lang="en">bcp_202-8999_ba30, hyd, wtr</nondisplayname>
+                                <last_modified>2021-10-25T17:41:21-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028153" sort="60">
+                                <nondisplayname lang="en">bcp_497-9455_ba30, hyd, fus</nondisplayname>
+                                <last_modified>2021-10-21T18:18:19-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="18110225" sort="70">
+                                <nondisplayname lang="en">bcp_202-7699_ba30, man, wtr</nondisplayname>
+                                <last_modified>2021-10-21T19:07:49-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="412" level="2" sort="90">
+                <name lang="en">Buckets - Backhoe Front</name>
+                <last_modified>2021-07-01T11:37:05-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="185" level="3" sort="10">
+                        <name lang="en">General Purpose Buckets</name>
+                        <last_modified>2021-12-03T03:18:54-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000027242" sort="30">
+                                <nondisplayname lang="en">bcp_251-1778_0.75 m3 (1.0 yd3), boce</nondisplayname>
+                                <last_modified>2021-07-23T20:24:02-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000027220" sort="50">
+                                <nondisplayname lang="en">bcp_190-1055_0.75 m3 (1.0 yd3), bot</nondisplayname>
+                                <last_modified>2021-09-28T17:09:18-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000027241" sort="110">
+                                <nondisplayname lang="en">bcp_251-1787_0.95 m3 (1.25 yd3), boce</nondisplayname>
+                                <last_modified>2021-09-28T17:10:38-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000027240" sort="130">
+                                <nondisplayname lang="en">bcp_251-1788_0.95 m3 (1.25 yd3), bot</nondisplayname>
+                                <last_modified>2021-09-28T17:10:21-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000027243" sort="330">
+                                <nondisplayname lang="en">bcp_251-1793_1.14 m3 (1.5 yd3), bot</nondisplayname>
+                                <last_modified>2021-09-28T17:10:55-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000027223" sort="360">
+                                <nondisplayname lang="en">bcp_251-1775_1.14 m3 (1.5 yd3), boce</nondisplayname>
+                                <last_modified>2021-09-28T17:09:36-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000027224" sort="380">
+                                <nondisplayname lang="en">bcp_251-1776_1.14 m3 (1.5 yd3), bot</nondisplayname>
+                                <last_modified>2021-09-28T17:09:58-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000027185" sort="410">
+                                <nondisplayname lang="en">bcp_270-9165_1.34 m3 (1.75 yd3)</nondisplayname>
+                                <last_modified>2021-10-27T17:19:53-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                    <product_group id="186" level="3" sort="20">
+                        <name lang="en">Multi-Purpose Buckets</name>
+                        <last_modified>2021-12-03T03:18:55-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000027320" sort="50">
+                                <nondisplayname lang="en">bcp_232-2683_1.0 m3 (1.3 yd3), boce, w/forks</nondisplayname>
+                                <last_modified>2021-07-23T20:26:28-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000027321" sort="90">
+                                <nondisplayname lang="en">bcp_232-2682_1.0 m3 (1.3 yd3), bot</nondisplayname>
+                                <last_modified>2021-07-23T20:26:59-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000027327" sort="100">
+                                <nondisplayname lang="en">bcp_232-2684_1.0 m3 (1.3 yd3), bot, w/forks</nondisplayname>
+                                <last_modified>2021-07-23T20:27:37-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000027326" sort="220">
+                                <nondisplayname lang="en">bcp_232-2688_1.1 m3 (1.4 yd3), boce, w/forks</nondisplayname>
+                                <last_modified>2021-07-23T20:27:14-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="18100539" sort="250">
+                                <nondisplayname lang="en">bcp_232-2686_1.1 m3 (1.4 yd3), boce</nondisplayname>
+                                <last_modified>2021-07-23T22:24:14-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000027328" sort="260">
+                                <nondisplayname lang="en">bcp_232-2687_1.1 m3 (1.4 yd3), bot</nondisplayname>
+                                <last_modified>2021-06-27T13:40:03-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000027342" sort="270">
+                                <nondisplayname lang="en">bcp_232-2689_1.1 m3 (1.4 yd3), bot, w/forks</nondisplayname>
+                                <last_modified>2021-09-28T17:11:13-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000027339" sort="420">
+                                <nondisplayname lang="en">bcp_268-5601_1.2 m3 (1.6 yd3), boce</nondisplayname>
+                                <last_modified>2021-09-28T17:11:29-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="413" level="2" sort="100">
+                <name lang="en">Buckets - Backhoe Rear</name>
+                <last_modified>2021-07-01T11:38:09-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="118" level="3" sort="30">
+                        <name lang="en">Ditch Cleaning Buckets</name>
+                        <last_modified>2021-12-03T03:19:23-06:00</last_modified>
+                        <listofproducts>
+                            <product id="18101422" sort="20">
+                                <nondisplayname lang="en">1219 mm (48 in) - Pin-Lock</nondisplayname>
+                                <last_modified>2021-09-28T18:16:13-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="18101436" sort="20">
+                                <nondisplayname lang="en">1219 mm (48 in) - Pin-On</nondisplayname>
+                                <last_modified>2021-09-28T18:17:21-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="18101359" sort="70">
+                                <nondisplayname lang="en">1524 mm (60 in) - Pin-On</nondisplayname>
+                                <last_modified>2021-09-28T18:17:36-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="414" level="2" sort="110">
+                <name lang="en">Buckets - Compact Wheel Loader</name>
+                <last_modified>2021-07-01T11:34:34-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="156" level="3" sort="20">
+                        <name lang="en">General Purpose Buckets</name>
+                        <last_modified>2021-12-03T03:17:40-06:00</last_modified>
+                        <listofproducts>
+                            <product id="18078940" sort="360">
+                                <nondisplayname lang="en">bcp_231-1461_1.4 m3 (1.8 yd3)</nondisplayname>
+                                <last_modified>2021-10-21T18:52:38-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="18585388" sort="390">
+                                <nondisplayname lang="en">bcp_231-1458_1.4 m3 (1.8 yd3)</nondisplayname>
+                                <last_modified>2021-10-21T19:42:36-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                    <product_group id="1000027714" level="3" sort="30">
+                        <name lang="en">General Purpose Buckets - Performance Series</name>
+                        <last_modified>2021-12-03T03:17:38-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000028829" sort="10">
+                                <nondisplayname lang="en">bcp_472-6543_1.2 m3 (1.6 yd3)</nondisplayname>
+                                <last_modified>2021-10-27T09:08:57-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028040" sort="20">
+                                <nondisplayname lang="en">bcp_472-6544_1.2 m3 (1.6 yd3)</nondisplayname>
+                                <last_modified>2021-10-27T09:08:16-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028833" sort="50">
+                                <nondisplayname lang="en">bcp_472-6546_1.3 m3 (1.7 yd3)</nondisplayname>
+                                <last_modified>2021-10-27T09:09:08-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028832" sort="90">
+                                <nondisplayname lang="en">bcp_472-6548_1.4 m3 (1.8 yd3)</nondisplayname>
+                                <last_modified>2021-10-27T09:09:03-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028049" sort="100">
+                                <nondisplayname lang="en">bcp_472-6549_1.4 m3 (1.8 yd3)</nondisplayname>
+                                <last_modified>2021-10-27T09:08:28-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028839" sort="140">
+                                <nondisplayname lang="en">bcp_472-6550_1.5 m3 (2.0 yd3)</nondisplayname>
+                                <last_modified>2021-10-27T09:09:19-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028838" sort="150">
+                                <nondisplayname lang="en">bcp_472-6551_1.5 m3 (2.0 yd3)</nondisplayname>
+                                <last_modified>2021-10-27T09:09:14-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028001" sort="220">
+                                <nondisplayname lang="en">bcp_415-5871_1.6 m3 (2.1 yd3)</nondisplayname>
+                                <last_modified>2021-10-27T09:08:05-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028008" sort="230">
+                                <nondisplayname lang="en">bcp_415-5958_1.6 m3 (2.1 yd3)</nondisplayname>
+                                <last_modified>2021-10-27T09:07:55-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028009" sort="260">
+                                <nondisplayname lang="en">bcp_415-5977_1.7 m3 (2.2 yd3)</nondisplayname>
+                                <last_modified>2021-10-27T09:08:00-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028077" sort="320">
+                                <nondisplayname lang="en">bcp_492-2489_1.8 m3 (2.4 yd3)</nondisplayname>
+                                <last_modified>2021-10-27T09:08:33-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000028002" sort="330">
+                                <nondisplayname lang="en">bcp_415-5928_1.8 m3 (2.4 yd3)</nondisplayname>
+                                <last_modified>2021-10-27T09:08:11-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000030801" sort="340">
+                                <nondisplayname lang="en">bcp_492-2490_1.8 m3 (2.4 yd3)</nondisplayname>
+                                <last_modified>2021-10-27T09:09:45-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                    <product_group id="159" level="3" sort="80">
+                        <name lang="en">Multi-Purpose Buckets</name>
+                        <last_modified>2021-12-03T03:17:39-06:00</last_modified>
+                        <listofproducts>
+                            <product id="18079005" sort="10">
+                                <nondisplayname lang="en">bcp_259-6010_0.6 m3 (0.8 yd3)</nondisplayname>
+                                <last_modified>2021-10-28T04:40:44-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="18079089" sort="40">
+                                <nondisplayname lang="en">bcp_276-5717_0.6 m3 (0.8 yd3), boce</nondisplayname>
+                                <last_modified>2021-10-28T04:40:53-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="18079071" sort="50">
+                                <nondisplayname lang="en">bcp_276-5718_0.6 m3 (0.8 yd3), bot</nondisplayname>
+                                <last_modified>2021-10-28T04:40:49-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="18079103" sort="80">
+                                <nondisplayname lang="en">bcp_337-8930_0.8 m3 (1.0 yd3)</nondisplayname>
+                                <last_modified>2021-10-28T04:40:57-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="18079057" sort="170">
+                                <nondisplayname lang="en">bcp_337-8950_0.9 m3 (1.2 yd3), boce</nondisplayname>
+                                <last_modified>2021-10-28T04:40:47-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="415" level="2" sort="120">
+                <name lang="en">Buckets - Excavator</name>
+                <last_modified>2021-07-01T11:33:23-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="1000024365" level="3" sort="50">
+                        <name lang="en">Ditch Cleaning</name>
+                        <last_modified>2021-12-03T03:17:11-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000024367" sort="9223372036854775807">
+                                <nondisplayname lang="en">439-7336_1200mm_48in</nondisplayname>
+                                <last_modified>2021-06-27T12:55:00-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000024373" sort="9223372036854775807">
+                                <nondisplayname lang="en">441-6084_1500mm_60in</nondisplayname>
+                                <last_modified>2021-06-27T12:56:14-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000024379" sort="9223372036854775807">
+                                <nondisplayname lang="en">439-7357_1800mm_72in</nondisplayname>
+                                <last_modified>2021-06-27T12:57:01-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000024443" sort="9223372036854775807">
+                                <nondisplayname lang="en">456-2089_1500mm_60in</nondisplayname>
+                                <last_modified>2021-06-27T13:00:03-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000024444" sort="9223372036854775807">
+                                <nondisplayname lang="en">456-2090_1800mm_72in</nondisplayname>
+                                <last_modified>2021-06-27T13:00:34-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000024481" sort="9223372036854775807">
+                                <nondisplayname lang="en">439-7351_1500mm_60in</nondisplayname>
+                                <last_modified>2021-06-27T12:55:54-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000024485" sort="9223372036854775807">
+                                <nondisplayname lang="en">439-7353_1800mm_72in</nondisplayname>
+                                <last_modified>2021-06-27T12:56:52-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                    <product_group id="1000021287" level="3" sort="80">
+                        <name lang="en">Extreme Duty</name>
+                        <last_modified>2021-12-03T03:17:07-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000021298" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3243_1250mm_49in</nondisplayname>
+                                <last_modified>2021-06-27T12:03:17-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000021330" sort="9223372036854775807">
+                                <nondisplayname lang="en">339-4491_2000mm_79in</nondisplayname>
+                                <last_modified>2021-06-27T12:08:15-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000021349" sort="9223372036854775807">
+                                <nondisplayname lang="en">339-4493_2090mm_82in</nondisplayname>
+                                <last_modified>2021-06-27T12:11:40-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                    <product_group id="1000012585" level="3" sort="100">
+                        <name lang="en">General Duty</name>
+                        <last_modified>2021-12-03T03:17:21-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000013023" sort="9223372036854775807">
+                                <nondisplayname lang="en">331-1221_1350mm_54in</nondisplayname>
+                                <last_modified>2021-06-27T11:13:47-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000015806" sort="9223372036854775807">
+                                <nondisplayname lang="en">358-8661_500mm_20in CW-20s</nondisplayname>
+                                <last_modified>2021-10-28T16:13:36-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000016301" sort="9223372036854775807">
+                                <nondisplayname lang="en">377-0221_900mm_36in</nondisplayname>
+                                <last_modified>2021-06-27T11:31:45-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000016302" sort="9223372036854775807">
+                                <nondisplayname lang="en">377-0220_600mm_24in</nondisplayname>
+                                <last_modified>2021-06-27T11:32:31-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000016303" sort="9223372036854775807">
+                                <nondisplayname lang="en">377-0219_450mm_18in</nondisplayname>
+                                <last_modified>2021-06-27T11:33:19-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000016304" sort="9223372036854775807">
+                                <nondisplayname lang="en">377-0223_1200mm_48in</nondisplayname>
+                                <last_modified>2021-06-27T11:34:29-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000018729" sort="9223372036854775807">
+                                <nondisplayname lang="en">377-5398_900mm_36in</nondisplayname>
+                                <last_modified>2021-06-27T11:50:46-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000018731" sort="9223372036854775807">
+                                <nondisplayname lang="en">377-5401_1350mm_54in</nondisplayname>
+                                <last_modified>2021-06-27T11:52:41-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000018733" sort="9223372036854775807">
+                                <nondisplayname lang="en">377-5396_600mm_24in</nondisplayname>
+                                <last_modified>2021-06-27T11:45:06-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000018736" sort="9223372036854775807">
+                                <nondisplayname lang="en">377-5400_1200mm_48in</nondisplayname>
+                                <last_modified>2021-06-27T11:48:05-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000018743" sort="9223372036854775807">
+                                <nondisplayname lang="en">377-5397_750mm_30in</nondisplayname>
+                                <last_modified>2021-06-27T11:52:51-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000018980" sort="9223372036854775807">
+                                <nondisplayname lang="en">346-0952_750mm_30in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T11:54:40-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000018981" sort="9223372036854775807">
+                                <nondisplayname lang="en">346-0951_600mm_24in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T11:48:22-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000018983" sort="9223372036854775807">
+                                <nondisplayname lang="en">346-0956_1350mm_54in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T11:50:15-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000018984" sort="9223372036854775807">
+                                <nondisplayname lang="en">346-0953_900mm_36in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T11:51:13-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000018985" sort="9223372036854775807">
+                                <nondisplayname lang="en">346-0955_1200mm_48in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T11:52:12-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000018986" sort="9223372036854775807">
+                                <nondisplayname lang="en">346-0954_1050mm_42in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T11:53:21-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019280" sort="9223372036854775807">
+                                <nondisplayname lang="en">342-2300_1550mm_62in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T11:58:13-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019281" sort="9223372036854775807">
+                                <nondisplayname lang="en">342-2298_1250mm_50in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T11:59:54-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019282" sort="9223372036854775807">
+                                <nondisplayname lang="en">342-2297_1100mm_44in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T12:01:29-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019283" sort="9223372036854775807">
+                                <nondisplayname lang="en">342-2296_950mm_38in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T12:02:44-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019284" sort="9223372036854775807">
+                                <nondisplayname lang="en">342-2295_800mm_32in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T12:04:05-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019285" sort="9223372036854775807">
+                                <nondisplayname lang="en">342-2299_1400mm_56in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T11:53:46-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019302" sort="9223372036854775807">
+                                <nondisplayname lang="en">456-1399_1500mm_60in</nondisplayname>
+                                <last_modified>2021-06-27T11:56:23-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019364" sort="9223372036854775807">
+                                <nondisplayname lang="en">329-2056_2000mm_79in</nondisplayname>
+                                <last_modified>2021-06-27T11:55:02-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019440" sort="9223372036854775807">
+                                <nondisplayname lang="en">331-1226_2200mm_87in High Capacity</nondisplayname>
+                                <last_modified>2021-06-27T12:03:38-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019520" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3187_1200mm_48in Capacity, lifteye</nondisplayname>
+                                <last_modified>2021-10-28T16:14:04-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019521" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3189_1500mm_60in Capacity, lifteye</nondisplayname>
+                                <last_modified>2021-10-28T16:14:12-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019522" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3190_1700mm_68in Capacity, lifteye</nondisplayname>
+                                <last_modified>2021-06-27T11:55:43-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019523" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3188_1350mm_54in Capacity, lifteye</nondisplayname>
+                                <last_modified>2021-06-27T11:56:41-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019541" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3259_900mm_36in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T11:59:08-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019542" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3260_1350mm_54in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T12:00:35-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019543" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3262_1650mm_66in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T12:02:14-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019544" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3200_2000mm_80in High Capacity</nondisplayname>
+                                <last_modified>2021-06-27T12:03:33-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019545" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3261_1500mm_60in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T12:05:10-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019546" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3264_1950mm_78in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T11:54:22-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000019547" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3263_1800mm_72in Wide Tip</nondisplayname>
+                                <last_modified>2021-06-27T11:55:15-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                    <product_group id="1000021427" level="3" sort="170">
+                        <name lang="en">Heavy Duty</name>
+                        <last_modified>2021-12-03T03:17:01-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000021829" sort="9223372036854775807">
+                                <nondisplayname lang="en">329-2059_1220mm_48in</nondisplayname>
+                                <last_modified>2021-06-27T12:13:02-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000022400" sort="9223372036854775807">
+                                <nondisplayname lang="en">423-2042_1050mm_42in PGP</nondisplayname>
+                                <last_modified>2021-06-27T12:18:34-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000022533" sort="9223372036854775807">
+                                <nondisplayname lang="en">444-0310_610mm_24in PGP</nondisplayname>
+                                <last_modified>2021-06-27T12:26:14-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000022712" sort="9223372036854775807">
+                                <nondisplayname lang="en">329-2060_1700mm_66in</nondisplayname>
+                                <last_modified>2021-06-27T12:32:26-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000022715" sort="9223372036854775807">
+                                <nondisplayname lang="en">329-2061_1900mm_75in</nondisplayname>
+                                <last_modified>2021-06-27T12:27:48-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                    <product_group id="1000023032" level="3" sort="300">
+                        <name lang="en">Severe Duty</name>
+                        <last_modified>2021-12-03T03:17:08-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000023651" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3225_1400mm_55in</nondisplayname>
+                                <last_modified>2021-06-27T12:43:29-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023667" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3228_1850mm_74in</nondisplayname>
+                                <last_modified>2021-10-28T16:15:39-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023778" sort="9223372036854775807">
+                                <nondisplayname lang="en">346-0970_1200mm_48in Pingrabber Performance</nondisplayname>
+                                <last_modified>2021-06-27T12:45:44-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023877" sort="9223372036854775807">
+                                <nondisplayname lang="en">345-3287_1450mm_58in</nondisplayname>
+                                <last_modified>2021-10-28T16:15:43-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="416" level="2" sort="130">
+                <name lang="en">Buckets - Loader</name>
+                <last_modified>2021-07-01T11:34:44-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="29" level="3" sort="140">
+                        <name lang="en">Light Material Buckets</name>
+                        <last_modified>2021-12-03T03:17:52-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000025245" sort="20">
+                                <nondisplayname lang="en">bcp_441-4460_3.0 m3 (3.9 yd3)</nondisplayname>
+                                <last_modified>2021-10-28T16:16:44-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000025220" sort="90">
+                                <nondisplayname lang="en">bcp_360-3315_3.5 m3 (4.6 yd3)</nondisplayname>
+                                <last_modified>2021-10-28T16:16:31-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000025256" sort="140">
+                                <nondisplayname lang="en">bcp_441-4475_3.8 m3 (5.0 yd3)</nondisplayname>
+                                <last_modified>2021-10-28T16:16:51-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000025255" sort="160">
+                                <nondisplayname lang="en">bcp_441-4465_3.8 m3 (5.0 yd3)</nondisplayname>
+                                <last_modified>2021-10-28T16:16:49-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000025266" sort="170">
+                                <nondisplayname lang="en">bcp_441-4470_3.8 m3 (5.0 yd3)</nondisplayname>
+                                <last_modified>2021-10-28T16:16:57-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000025219" sort="230">
+                                <nondisplayname lang="en">bcp_360-3316_4.2 m3 (5.5 yd3)</nondisplayname>
+                                <last_modified>2021-10-28T16:16:29-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000025218" sort="290">
+                                <nondisplayname lang="en">bcp_360-3317_5.0 m3 (6.5 yd3)</nondisplayname>
+                                <last_modified>2021-10-28T16:16:27-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="15970410" sort="5000">
+                                <nondisplayname lang="en">354-4874_Light Material Bucket 9.2m³ (12yd³) Fusion 950/962</nondisplayname>
+                                <last_modified>2021-10-27T09:27:10-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="15969640" sort="5100">
+                                <nondisplayname lang="en">354-4873_Light Material Bucket 9.2m³ (12yd³) Pin On 950/962</nondisplayname>
+                                <last_modified>2021-10-27T09:27:05-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="15970412" sort="5200">
+                                <nondisplayname lang="en">354-4876_Light Material Bucket 9.9m³ (13yd³) Fusion 950/962</nondisplayname>
+                                <last_modified>2021-10-27T09:27:19-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="15970411" sort="5300">
+                                <nondisplayname lang="en">354-4875_Light Material Bucket 9.9m³ (13yd³) Pin On 950/962</nondisplayname>
+                                <last_modified>2021-10-27T09:27:14-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="417" level="2" sort="150">
+                <name lang="en">Buckets - Skid Steer Loader</name>
+                <last_modified>2021-07-01T11:36:14-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="162" level="3" sort="100">
+                        <name lang="en">General Purpose Buckets</name>
+                        <last_modified>2021-12-03T03:18:38-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000023334" sort="10">
+                                <nondisplayname lang="en">bcp_279-5364_1576 mm (62 in)</nondisplayname>
+                                <last_modified>2021-10-25T17:24:27-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023335" sort="40">
+                                <nondisplayname lang="en">bcp_279-5368_1730 mm (68 in)</nondisplayname>
+                                <last_modified>2021-10-25T17:24:32-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023332" sort="70">
+                                <nondisplayname lang="en">bcp_279-5372_1883 mm (74 in)</nondisplayname>
+                                <last_modified>2021-10-25T17:24:18-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023336" sort="100">
+                                <nondisplayname lang="en">bcp_279-5376_2036 mm (80 in)</nondisplayname>
+                                <last_modified>2021-10-27T17:18:15-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023333" sort="130">
+                                <nondisplayname lang="en">bcp_292-9270_2188 mm (86 in)</nondisplayname>
+                                <last_modified>2021-10-25T17:24:23-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                    <product_group id="261" level="3" sort="200">
+                        <name lang="en">Industrial Grapple Buckets</name>
+                        <last_modified>2021-12-03T03:18:33-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000023321" sort="10">
+                                <nondisplayname lang="en">bcp_157-7223_1576 mm (62 in)</nondisplayname>
+                                <last_modified>2021-10-28T16:15:55-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023320" sort="30">
+                                <nondisplayname lang="en">bcp_157-7224_1730 mm (68 in)</nondisplayname>
+                                <last_modified>2021-10-28T16:15:53-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023322" sort="50">
+                                <nondisplayname lang="en">bcp_157-7225_1883 mm (74 in)</nondisplayname>
+                                <last_modified>2021-10-28T16:15:57-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023323" sort="70">
+                                <nondisplayname lang="en">bcp_217-6229_2035 mm (80 in)</nondisplayname>
+                                <last_modified>2021-10-28T16:15:59-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                    <product_group id="165" level="3" sort="400">
+                        <name lang="en">Light Material Buckets</name>
+                        <last_modified>2021-12-03T03:18:36-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000023417" sort="10">
+                                <nondisplayname lang="en">bcp_279-5421_1883 mm (74 in)</nondisplayname>
+                                <last_modified>2021-10-28T16:15:47-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023420" sort="30">
+                                <nondisplayname lang="en">bcp_279-5424_2036 mm (80 in)</nondisplayname>
+                                <last_modified>2021-10-28T16:15:05-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                    <product_group id="166" level="3" sort="800">
+                        <name lang="en">Multi-Purpose Buckets</name>
+                        <last_modified>2021-12-03T03:18:37-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000023446" sort="10">
+                                <nondisplayname lang="en">bcp_426-6931_1524 mm (60 in), bot</nondisplayname>
+                                <last_modified>2021-10-28T16:15:29-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023454" sort="10">
+                                <nondisplayname lang="en">bcp_426-6932_1524 mm (60 in), boce</nondisplayname>
+                                <last_modified>2021-10-28T16:15:36-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023450" sort="30">
+                                <nondisplayname lang="en">bcp_426-6938_1676 mm (66 in), bot</nondisplayname>
+                                <last_modified>2021-10-28T16:15:25-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023455" sort="30">
+                                <nondisplayname lang="en">bcp_426-6939_1676 mm (66 in), boce</nondisplayname>
+                                <last_modified>2021-10-28T16:15:38-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023448" sort="50">
+                                <nondisplayname lang="en">bcp_426-6944_1829 mm (72 in), bot</nondisplayname>
+                                <last_modified>2021-10-28T16:15:19-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023451" sort="50">
+                                <nondisplayname lang="en">bcp_426-6945_1829 mm (72 in), boce</nondisplayname>
+                                <last_modified>2021-10-28T16:15:31-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023449" sort="80">
+                                <nondisplayname lang="en">bcp_426-6965_1981 mm (78 in), bot</nondisplayname>
+                                <last_modified>2021-10-28T16:15:21-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023453" sort="80">
+                                <nondisplayname lang="en">bcp_426-6967_1981 mm (78 in), boce</nondisplayname>
+                                <last_modified>2021-10-28T16:15:35-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023447" sort="120">
+                                <nondisplayname lang="en">bcp_426-6989_2134 mm (84 in), boce</nondisplayname>
+                                <last_modified>2021-10-28T16:15:32-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023452" sort="120">
+                                <nondisplayname lang="en">bcp_426-6985_2134 mm (84 in), bot</nondisplayname>
+                                <last_modified>2021-10-28T16:15:34-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                    <product_group id="164" level="3" sort="1000">
+                        <name lang="en">Utility Buckets</name>
+                        <last_modified>2021-12-03T03:18:35-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000023416" sort="10">
+                                <nondisplayname lang="en">bcp_285-6096_1576 mm (62 in)</nondisplayname>
+                                <last_modified>2021-10-28T16:15:45-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023419" sort="30">
+                                <nondisplayname lang="en">bcp_285-6099_1730 mm (68 in)</nondisplayname>
+                                <last_modified>2021-10-28T16:15:03-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000023418" sort="50">
+                                <nondisplayname lang="en">bcp_285-6102_1883 mm (74 in)</nondisplayname>
+                                <last_modified>2021-10-28T16:15:01-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="1000025071" level="2" sort="260">
+                <name lang="en">Forks</name>
+                <last_modified>2021-07-01T11:35:53-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="18375748" level="3" sort="20">
+                        <name lang="en">Construction Forks</name>
+                        <last_modified>2021-12-03T03:18:29-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000020200" sort="60">
+                                <nondisplayname lang="en">bcp_345-2750_1829 mm (72 in)</nondisplayname>
+                                <last_modified>2021-10-21T17:57:49-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                    <product_group id="1000025077" level="3" sort="60">
+                        <name lang="en">Pallet Fork Carriages</name>
+                        <last_modified>2021-12-03T03:18:22-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000025904" sort="180">
+                                <nondisplayname lang="en">bcp_345-2417_1566 mm (62 in)</nondisplayname>
+                                <last_modified>2021-07-23T20:37:49-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                    <product_group id="17519437" level="3" sort="140">
+                        <name lang="en">Pallet Forks</name>
+                        <last_modified>2021-12-03T03:18:22-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000024232" sort="10">
+                                <nondisplayname lang="en">bcp_353-1694_910 mm (36 in)</nondisplayname>
+                                <last_modified>2021-10-21T18:02:17-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="430" level="2" sort="280">
+                <name lang="en">Hammers</name>
+                <last_modified>2021-07-01T11:37:20-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="13869258" level="3" sort="10">
+                        <name lang="en">Hammers</name>
+                        <last_modified>2021-12-03T03:18:58-06:00</last_modified>
+                        <listofproducts>
+                            <product id="18495741" sort="200">
+                                <nondisplayname lang="en">437-5185_H55E (Flat Top)</nondisplayname>
+                                <last_modified>2021-10-21T19:38:29-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="18496325" sort="210">
+                                <nondisplayname lang="en">435-5318_H65E (Flat Top)</nondisplayname>
+                                <last_modified>2021-10-21T19:38:45-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                            <product id="1000032950" sort="280">
+                                <nondisplayname lang="en">bcp_551-4954_h80e flat top hammer</nondisplayname>
+                                <last_modified>2021-10-21T18:27:43-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="436" level="2" sort="300">
+                <name lang="en">Material Handling</name>
+                <last_modified>2021-07-01T11:34:11-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="60" level="3" sort="20">
+                        <name lang="en">Material Handling Arms</name>
+                        <last_modified>2021-12-03T03:17:28-06:00</last_modified>
+                        <listofproducts>
+                            <product id="18377346" sort="9223372036854775807">
+                                <nondisplayname lang="en">3937 mm (155 in) Material Handling Arm, IT</nondisplayname>
+                                <last_modified>2021-10-21T19:28:34-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+            <product_group id="753" level="2" sort="370">
+                <name lang="en">Saws</name>
+                <last_modified>2021-07-01T11:36:57-05:00</last_modified>
+                <listofgroups>
+                    <product_group id="754" level="3" sort="3038001000">
+                        <name lang="en">Wheel Saws</name>
+                        <last_modified>2021-12-03T03:18:51-06:00</last_modified>
+                        <listofproducts>
+                            <product id="1000027900" sort="90">
+                                <nondisplayname lang="en">bcp_381-8430_sw360b, 152 mm (6 in)</nondisplayname>
+                                <last_modified>2021-10-27T09:08:52-05:00</last_modified>
+                                <status>Noncurrent</status>
+                            </product>
+                        </listofproducts>
+                    </product_group>
+                </listofgroups>
+            </product_group>
+        </listofgroups>
+    </product_group>
+    <context>
+        <sales_channel id="H430"/>
+        <date_generated>2021-12-07T08:40:32-06:00</date_generated>
+    </context>
+</cmms>

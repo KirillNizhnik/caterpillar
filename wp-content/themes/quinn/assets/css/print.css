@@ -1,0 +1,148 @@
+/*------------------------------------*\
+
+    Global Print CSS
+
+    You can include block or page specific print styling within its respective CSS stylesheet
+
+\*------------------------------------*/
+
+
+ @media print {
+
+    /* Reset*/
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        filter: none !important;
+        -webkit-filter: none !important;
+        text-shadow: none !important;
+    }
+
+    h2, h3 {
+        /* Avoid a paragraph being detached from the heading immediately preceding it */
+        page-break-after: avoid;
+    }
+
+    figure, table {
+        /* Avoid breaking figure or table into 2 pages */
+        -webkit-column-break-inside: avoid;
+            -moz-column-break-inside: avoid;
+                break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    p {
+        /* Prevent single line at the end of a page and a single line at the top the next page */
+        orphans: 2;
+        widows: 2;
+    }
+
+
+    /* Grid Styling */
+
+    .container { width: auto; }
+
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 { float: left; }
+
+    .col-sm-12 { width: 100%; }
+    .col-sm-11 { width: 91.66666666666666%; }
+    .col-sm-10 { width: 83.33333333333334%; }
+    .col-sm-9 { width: 75%; }
+    .col-sm-8 { width: 66.66666666666666%; }
+    .col-sm-7 { width: 58.333333333333336%; }
+    .col-sm-6 { width: 50%; }
+    .col-sm-5 { width: 41.66666666666667%; }
+    .col-sm-4 { width: 33.33333333333333%; }
+    .col-sm-3 { width: 25%; }
+    .col-sm-2 { width: 16.666666666666664%; }
+    .col-sm-1 { width: 8.333333333333332%; }
+
+
+    /* Slick Slider - remove if not using slick slider */
+
+    .slick-slider .slick-arrow,
+    .slick-slider .slick-dots {
+    display: none !important; /* we usually don't need to show slider navigation for print */
+    }
+
+    /* For sliders you want to display full width for print.
+      Update ".slick-slider" with your specific slider names. */
+    .slick-slider,
+    .slick-sliderg .slick-list,
+    .slick-slider .slick-track,
+    .slick-slider .slick-slide {
+    width: 100% !important;
+    height: auto !important;
+    }
+
+    /* For sliders where you only want to show the 1st image of that slider.
+      Update ".slick-slider" with your specific slider names. */
+    .slick-slider .slick-slide 				{ display: none !important; }
+    .slick-slider .slick-slide.slick-active { display: block !important; }
+
+    /* Show Only Active Thumbnails */
+    .slick-slider .slick-cloned {
+    display: none;
+    }
+
+    /* Reset adaptiveHeight */
+    .slick-list {
+        height: auto !important;
+    }
+
+    /* Remove Scrollbars */
+    .slick-track {
+        width: auto !important;
+        height: auto !important;
+        -webkit-transform: none !important;
+                transform: none !important;
+    }
+
+    .slick-track.slick-slide {
+        width: auto !important;
+    }
+
+
+    .site-logo img{
+        display: block;
+    }
+
+    .masthead-inner{
+        background: #ebeef2
+    }
+
+    .top-header,
+    .bottom-header-right,
+    .masthead-inner-texture-image,
+    .breadcrumbs,
+    .related-equipment,
+    .footer-newsletter,
+    .footer-bottom,
+    .footer-short-links,
+    .fixed-navbar,
+    .quote-cont,
+    .product-detail__secondary-buttons{
+        display: none;
+    }
+
+    .tab-content-main {
+        display: block !important;
+    }
+
+    .media-browser__preview img {
+        width: 30%;
+        height: auto;
+    }
+
+    .footer-logo-address{
+        border-right: none;
+    }
+
+    .product-detail__media-area.col-sm-6.col-md-5 {
+        width: 100%;
+    }
+
+}

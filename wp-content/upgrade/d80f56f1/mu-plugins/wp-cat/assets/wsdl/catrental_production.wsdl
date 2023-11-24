@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions name="RetrieveFromSyndicateDB" targetNamespace="http://CatToSyndicateDBLib/RetrieveRental" xmlns:bons0="http://CatToSyndicateDBLib/RetrieveFromSyndicateDB" xmlns:bons1="http://CatToSyndicateDBLib" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://CatToSyndicateDBLib/RetrieveRental" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <wsdl:types>
+    <xsd:schema targetNamespace="http://CatToSyndicateDBLib/RetrieveRental" xmlns:bons0="http://CatToSyndicateDBLib/RetrieveRental">
+            <xsd:import namespace="http://CatToSyndicateDBLib"/>
+      <xsd:element name="getRentalUpdates">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="input" nillable="true" type="bons1:RentalUpdateRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getRentalUpdatesResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="output" nillable="true" type="bons1:RentalUpdateResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getRentalDetails">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="input" nillable="true" type="bons1:RentalDetailsRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getRentalDetailsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="output" nillable="true" type="bons1:RentalDetailsResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+            <xsd:element name="getRentalUpdatesFault1_getRentalUpdatesFault" nillable="true" type="bons1:GenericFaultBO"/>
+            <xsd:element name="getRentalDetailsFault1_getRentalDetailsFault" nillable="true" type="bons1:GenericFaultBO"/>
+            <xsd:element name="validateRental">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="input" nillable="true" type="bons1:ValidateRentalRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+            <xsd:element name="validateRentalResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="output" nillable="true" type="bons1:ValidateRentalResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+            <xsd:element name="validateRentalFault1_validateRentalFault" nillable="true" type="bons1:GenericFaultBO"/>
+        </xsd:schema>
+        <xsd:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://CatToSyndicateDBLib" xmlns:bons0="http://CatToSyndicateDBLib">
+      <xsd:complexType name="GenericFaultBO">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="ServiceName" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="ErrorMessage" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Origin" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Timestamp" type="xsd:string">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="RentalUpdate">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="rentalUpdate" type="bons0:RentalList">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="RentalList">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="dealer_code" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="product_id" type="xsd:int">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="action" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="date" type="xsd:dateTime">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="ValidateRentalRequest">
+		<xsd:sequence>
+			<xsd:element minOccurs="1" name="region" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="1" name="lang" type="xsd:string"/>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="rentalDescList" type="bons0:RentalDescList">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="RentalDescList">
+		<xsd:sequence>
+			<xsd:element minOccurs="1" name="dealer_code" type="xsd:string">
+			</xsd:element>
+			<xsd:element default="0" minOccurs="1" name="product_id" type="xsd:int">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="version" type="xsd:dateTime">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="RateBO">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="rate" type="bons0:RateDetailsBO">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="RateDetailsBO">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="period" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="currency_id" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="currency_value" type="xsd:string">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="RentalDetailsRequest">
+		<xsd:sequence>
+			<xsd:element minOccurs="1" name="lang" type="xsd:string">
+
+			</xsd:element>
+			<xsd:element minOccurs="1" name="region" type="xsd:string">
+
+			</xsd:element>
+			<xsd:element minOccurs="1" name="dealer_code" type="xsd:string">
+			</xsd:element>
+			<xsd:element default="0" minOccurs="1" name="product_id" type="xsd:int">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="RentalUpdateResponse">
+		<xsd:sequence>
+
+
+
+
+
+			<xsd:element minOccurs="0" name="update_count" type="xsd:int">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="delete_count" type="xsd:int">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="total" type="xsd:int"/>
+			<xsd:element minOccurs="0" name="more" type="xsd:boolean"/>
+			<xsd:element minOccurs="0" name="last_update_date" type="xsd:dateTime">
+			</xsd:element>
+			<xsd:element maxOccurs="1" minOccurs="0" name="rentalList" type="bons0:RentalUpdate">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="RentalUpdateRequest">
+		<xsd:sequence>
+			<xsd:element minOccurs="1" name="lang" type="xsd:string">
+
+			</xsd:element>
+			<xsd:element minOccurs="1" name="region" type="xsd:string">
+
+			</xsd:element>
+			<xsd:element minOccurs="0" name="lastUpdateTimestamp" type="xsd:dateTime">
+
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="RentalUpdateResponse1">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="rentalUpdateList" type="bons0:RentalUpdateResponse">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="ValidateRentalResponse">
+		<xsd:sequence>
+
+			<xsd:element minOccurs="0" name="update_count" type="xsd:int">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="delete_count" type="xsd:int">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="lastUpdateDate" type="xsd:dateTime">
+			</xsd:element>
+			<xsd:element maxOccurs="1" minOccurs="0" name="rentalUpdateList" type="bons0:RentalUpdate">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="RentalDetailsResponse">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="dealer_code" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="product_id" type="xsd:int">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="version">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:dateTime">
+						<xsd:pattern value="yyyy-mm-ddThh:mm:ss.mmmZD">
+						</xsd:pattern>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+
+
+
+			<xsd:element maxOccurs="1" minOccurs="0" name="rateList" type="bons0:RateBO">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="notes" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+    </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="getRentalUpdatesRequestMsg">
+    <wsdl:part element="tns:getRentalUpdates" name="getRentalUpdatesParameters"/>
+  </wsdl:message>
+    <wsdl:message name="getRentalUpdatesResponseMsg">
+    <wsdl:part element="tns:getRentalUpdatesResponse" name="getRentalUpdatesResult"/>
+  </wsdl:message>
+    <wsdl:message name="getRentalDetailsRequestMsg">
+    <wsdl:part element="tns:getRentalDetails" name="getRentalDetailsParameters"/>
+  </wsdl:message>
+    <wsdl:message name="getRentalDetailsResponseMsg">
+    <wsdl:part element="tns:getRentalDetailsResponse" name="getRentalDetailsResult"/>
+  </wsdl:message>
+    <wsdl:message name="getRentalUpdates_getRentalUpdatesFaultMsg">
+    <wsdl:part element="tns:getRentalUpdatesFault1_getRentalUpdatesFault" name="getRentalUpdatesFault"/>
+  </wsdl:message>
+    <wsdl:message name="getRentalDetails_getRentalDetailsFaultMsg">
+    <wsdl:part element="tns:getRentalDetailsFault1_getRentalDetailsFault" name="getRentalDetailsFault"/>
+  </wsdl:message>
+    <wsdl:message name="validateRentalRequestMsg">
+    <wsdl:part element="tns:validateRental" name="validateRentalParameters"/>
+  </wsdl:message>
+    <wsdl:message name="validateRentalResponseMsg">
+    <wsdl:part element="tns:validateRentalResponse" name="validateRentalResult"/>
+  </wsdl:message>
+    <wsdl:message name="validateRental_validateRentalFaultMsg">
+    <wsdl:part element="tns:validateRentalFault1_validateRentalFault" name="validateRentalFault"/>
+  </wsdl:message>
+    <wsdl:portType name="RetrieveRentalUpdate">
+    <wsdl:operation name="getRentalUpdates">
+      <wsdl:input message="tns:getRentalUpdatesRequestMsg" name="getRentalUpdatesRequest"/>
+      <wsdl:output message="tns:getRentalUpdatesResponseMsg" name="getRentalUpdatesResponse"/>
+            <wsdl:fault message="tns:getRentalUpdates_getRentalUpdatesFaultMsg" name="getRentalUpdatesFault"/>
+        </wsdl:operation>
+    <wsdl:operation name="getRentalDetails">
+      <wsdl:input message="tns:getRentalDetailsRequestMsg" name="getRentalDetailsRequest"/>
+      <wsdl:output message="tns:getRentalDetailsResponseMsg" name="getRentalDetailsResponse"/>
+            <wsdl:fault message="tns:getRentalDetails_getRentalDetailsFaultMsg" name="getRentalDetailsFault"/>
+        </wsdl:operation>
+        <wsdl:operation name="validateRental">
+      <wsdl:input message="tns:validateRentalRequestMsg" name="validateRentalRequest"/>
+      <wsdl:output message="tns:validateRentalResponseMsg" name="validateRentalResponse"/>
+      <wsdl:fault message="tns:validateRental_validateRentalFaultMsg" name="validateRentalFault"/>
+    </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="RetrieveRentalWSExport_RetrieveRentalUpdateHttpBinding" type="tns:RetrieveRentalUpdate">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getRentalUpdates">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="getRentalUpdatesRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRentalUpdatesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="getRentalUpdatesFault">
+        <soap:fault name="getRentalUpdatesFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getRentalDetails">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="getRentalDetailsRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRentalDetailsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="getRentalDetailsFault">
+        <soap:fault name="getRentalDetailsFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="validateRental">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="validateRentalRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="validateRentalResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="validateRentalFault">
+        <soap:fault name="validateRentalFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+    <wsdl:service name="RetrieveRentalWSExport_RetrieveRentalUpdateHttpService">
+    <wsdl:port binding="tns:RetrieveRentalWSExport_RetrieveRentalUpdateHttpBinding" name="RetrieveRentalWSExport_RetrieveRentalUpdateHttpPort">
+      <soap:address location="https://icc-services.cat.com/CatToSyndicateDBWeb/sca/RetrieveRentalWSExport"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

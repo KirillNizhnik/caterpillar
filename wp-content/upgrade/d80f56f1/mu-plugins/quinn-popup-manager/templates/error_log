@@ -1,0 +1,4 @@
+[10-Jul-2020 05:47:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_post_thumbnail_url() in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/templates/popup_view.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/templates/popup_view.php on line 4

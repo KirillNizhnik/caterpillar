@@ -1,0 +1,54 @@
+[10-Jul-2020 05:44:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_url() in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php:3
+Stack trace:
+#0 /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/quinn-popup-manager.php(13): include_once()
+#1 {main}
+  thrown in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php on line 3
+[10-Jul-2020 05:44:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_url() in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php on line 3
+[10-Jul-2020 05:44:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_url() in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php:3
+Stack trace:
+#0 /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/quinn-popup-manager.php(13): include_once()
+#1 {main}
+  thrown in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php on line 3
+[10-Jul-2020 05:44:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_url() in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php on line 3
+[10-Jul-2020 05:44:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_url() in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php:3
+Stack trace:
+#0 /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/quinn-popup-manager.php(13): include_once()
+#1 {main}
+  thrown in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php on line 3
+[10-Jul-2020 05:44:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_url() in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php on line 3
+[10-Jul-2020 05:44:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_url() in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php:3
+Stack trace:
+#0 /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/quinn-popup-manager.php(13): include_once()
+#1 {main}
+  thrown in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php on line 3
+[10-Jul-2020 05:44:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_url() in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php on line 3
+[10-Jul-2020 05:44:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_url() in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php:3
+Stack trace:
+#0 /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/quinn-popup-manager.php(13): include_once()
+#1 {main}
+  thrown in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php on line 3
+[10-Jul-2020 05:44:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_url() in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php on line 3
+[10-Jul-2020 05:44:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_url() in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php:3
+Stack trace:
+#0 /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/quinn-popup-manager.php(13): include_once()
+#1 {main}
+  thrown in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php on line 3
+[10-Jul-2020 05:44:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_url() in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/quinncompany/public_html/content/mu-plugins/quinn-popup-manager/config.inc.php on line 3

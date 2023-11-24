@@ -1,0 +1,176 @@
+{
+    "key": "group_6149f5f1a23ba",
+    "title": "Industries",
+    "fields": [
+        {
+            "key": "field_6149f6025f730",
+            "label": "Families Selection",
+            "name": "families_selection",
+            "type": "flexible_content",
+            "instructions": "Select the family feeds to be shown on this industry page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_614a05165c07c": {
+                    "key": "layout_614a05165c07c",
+                    "name": "families_or_pages_selection",
+                    "label": "Families or Pages Selection",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6149f61a5f731",
+                            "label": "New Equipment Families",
+                            "name": "new_machine_families",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "family",
+                            "field_type": "checkbox",
+                            "add_term": 0,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "id",
+                            "multiple": 0,
+                            "allow_null": 0
+                        },
+                        {
+                            "key": "field_614a06437023e",
+                            "label": "Pages",
+                            "name": "pages",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "Add Page",
+                            "sub_fields": [
+                                {
+                                    "key": "field_614a0a3a43e22",
+                                    "label": "Individual Page",
+                                    "name": "individual_page",
+                                    "type": "post_object",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "page"
+                                    ],
+                                    "taxonomy": "",
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "return_format": "id",
+                                    "ui": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": 0,
+            "max": 1
+        },
+        {
+            "key": "field_61ae6cc5a843c",
+            "label": "Industry Link",
+            "name": "industry_link",
+            "type": "text",
+            "instructions": "Use this field to customize the entry for this on the archive page - can be external links as well. Applies to industry archive.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61ae6cfaa843e",
+            "label": "Industry Name",
+            "name": "industry_name",
+            "type": "text",
+            "instructions": "Use this field to customize the entry for this on the archive page - can be external links as well. Applies to industry archive.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61ae6d24a843f",
+            "label": "Learn More Text",
+            "name": "learn_more_text",
+            "type": "text",
+            "instructions": "Change this field if you'd like to customize the learn more text.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "cat_industry"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1638897649
+}
